@@ -5,6 +5,10 @@ import { NAV, CTA } from "./nav-links";
 export function SiteFooter() {
   return (
     <footer className="bg-canvas-2 text-small text-ink-2">
+      {/* Tricolorul, ca detaliu de brand preluat din site-ul actual */}
+      <div aria-hidden="true" className="grid h-1 grid-cols-3">
+        <span className="bg-flag-blue" /><span className="bg-flag-yellow" /><span className="bg-flag-red" />
+      </div>
       <div className="container-x grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr] md:py-20">
         <div>
           <p className="text-[1.0625rem] font-semibold text-ink">{SITE.nume}</p>

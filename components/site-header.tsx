@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
@@ -33,7 +34,7 @@ export function SiteHeader() {
       </a>
       <div className="container-x flex h-16 items-center justify-between gap-4">
         <Link href="/" className="flex min-h-11 items-center gap-2 font-semibold tracking-tight">
-          <span aria-hidden="true" className="grid h-8 w-8 place-items-center rounded-full bg-brand text-[0.8rem] font-bold text-white">CR</span>
+          <Image src="/brand/monogram.svg" alt="" width={27} height={32} unoptimized priority className="h-8 w-auto" />
           <span className="text-[1.0625rem]">Cătălin Renghea<span className="sr-only">, pagina principală</span></span>
         </Link>
 

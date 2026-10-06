@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 /*
- * Design tokens. Paleta de brand e PROVIZORIE până la extragerea din CSS-ul site-ului actual
- * (vezi PREVIEW-REPORT.md). Se schimbă doar aici: --brand, --brand-strong, --brand-soft.
+ * Design tokens. Paleta de brand vine din CSS-ul site-ului actual (content/raw/brand.json):
+ * albastrul #2461a2 și bleumarinul #123f70, rafinate; tricolorul (#fcd116, #eb3e40) doar ca detaliu.
  * Contraste verificate (WCAG): vezi scripts/contrast.mjs.
  */
 @theme {
-  --color-brand: #1747b0;
-  --color-brand-strong: #0f347f;
-  --color-brand-soft: #e9effb;
+  --color-brand: #2461a2;
+  --color-brand-strong: #123f70;
+  --color-brand-soft: #e8f0f8;
   --color-ink: #1d1d1f;
   --color-ink-2: #4a4a4f;
   --color-ink-3: #6e6e73;
@@ -16,6 +16,9 @@
   --color-canvas: #ffffff;
   --color-canvas-2: #f5f5f7;
   --color-canvas-3: #ebebef;
+  --color-flag-blue: #002b7f;
+  --color-flag-yellow: #fcd116;
+  --color-flag-red: #ce1126;
   --color-todo: #fff4d6;
   --color-todo-ink: #6b4a00;
   --color-ok: #1f7a3a;

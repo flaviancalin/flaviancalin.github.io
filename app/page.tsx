@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Page, Section } from "@/components/page";
 import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 import { CountUp } from "@/components/count-up";
 import { Icon } from "@/components/icons";
 import { TemaCard, ArticolCard } from "@/components/cards";
@@ -26,7 +27,7 @@ export default function Home() {
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <PhotoPlaceholder hint="Portret principal, vertical, minimum 1600px" ratio="4 / 5" className="mx-auto max-h-[40svh] w-full max-w-md lg:max-h-none lg:max-w-none" />
+            <Photo k="hero" priority ratio="4 / 5" position="50% 22%" sizes="(min-width: 1280px) 400px, (min-width: 1024px) 31vw, (min-width: 448px) 448px, 100vw" className="mx-auto max-h-[42svh] w-full max-w-md lg:max-h-none lg:max-w-none" />
           </div>
         </div>
       </section>
