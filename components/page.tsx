@@ -11,22 +11,37 @@ export function Page({ children, className = "" }: { children: React.ReactNode; 
   );
 }
 
-export function PageIntro({ eyebrow, title, lead, children }: { eyebrow?: string; title: string; lead?: React.ReactNode; children?: React.ReactNode }) {
+/** Deschiderea unei pagini interioare: titlu mare, centrat, o frază. */
+export function PageIntro({ title, lead, children }: { title: string; lead?: React.ReactNode; children?: React.ReactNode }) {
   return (
-    <header className="container-x pt-14 pb-10 md:pt-24 md:pb-16">
-      {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
-      <h1 className="text-h2 md:text-hero max-w-[18ch]">{title}</h1>
-      {lead && <p className="measure mt-5 text-lead text-ink-2">{lead}</p>}
+    <header className="container-x pt-16 pb-12 text-center md:pt-28 md:pb-16">
+      <h1 className="mx-auto max-w-[16ch] text-h2 md:text-hero">{title}</h1>
+      {lead && <p className="mx-auto mt-5 max-w-[40ch] text-tagline text-ink-2">{lead}</p>}
       {children}
     </header>
   );
 }
 
-export function Section({ children, tone = "white", className = "", id, labelledBy }: { children: React.ReactNode; tone?: "white" | "gray" | "brand"; className?: string; id?: string; labelledBy?: string }) {
-  const bg = tone === "gray" ? "bg-canvas-2" : tone === "brand" ? "bg-brand text-white" : "bg-canvas";
+const tones = {
+  white: "bg-canvas text-ink",
+  gray: "bg-canvas-2 text-ink",
+  night: "on-night bg-night text-white",
+} as const;
+
+export function Section({ children, tone = "white", className = "", id, labelledBy }: { children: React.ReactNode; tone?: keyof typeof tones; className?: string; id?: string; labelledBy?: string }) {
   return (
-    <section id={id} aria-labelledby={labelledBy} className={`${bg} py-16 md:py-28 ${className}`}>
+    <section id={id} aria-labelledby={labelledBy} className={`${tones[tone]} py-20 md:py-32 ${className}`}>
       <div className="container-x">{children}</div>
     </section>
+  );
+}
+
+/** Titlul unui capitol: centrat, cu o frază dedesubt. */
+export function ChapterHead({ id, title, lead, as: H = "h2" }: { id?: string; title: React.ReactNode; lead?: React.ReactNode; as?: "h1" | "h2" }) {
+  return (
+    <div className="chapter-head">
+      <H id={id} className={H === "h1" ? "text-hero" : "text-h2"}>{title}</H>
+      {lead && <p>{lead}</p>}
+    </div>
   );
 }

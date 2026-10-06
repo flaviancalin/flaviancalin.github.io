@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Page, PageIntro, Section } from "@/components/page";
+import { ChapterHead, Page, Section } from "@/components/page";
 import { Photo } from "@/components/photo";
 import { Timeline } from "@/components/timeline";
 import { Icon } from "@/components/icons";
-import { OrTodo, Todo } from "@/components/todo";
 import { DESPRE, ETAPE, STUDII } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -14,78 +13,67 @@ export const metadata: Metadata = {
 };
 
 export default function DesprePage() {
+  const [intro, ...rest] = DESPRE.paragrafe;
   return (
     <Page>
-      <PageIntro eyebrow="Despre mine" title="De la Guvern, la Sectorul 4." />
+      <section aria-labelledby="despre-title" className="overflow-hidden pt-16 pb-16 md:pt-28 md:pb-24">
+        <div className="container-x">
+          <ChapterHead as="h1" id="despre-title" title="De la Guvern, la Sectorul 4." lead="Peste zece ani în Guvern, în Parlament și în instituțiile Sectorului 4." />
+        </div>
+        <div className="container-x mt-12 md:mt-16">
+          <Photo k="despre" priority ratio="var(--r)" position="55% 18%" sizes="(min-width: 1200px) 1120px, 100vw" className="media-settle [--r:1/1] sm:[--r:3/2] lg:[--r:16/9]" />
+        </div>
+      </section>
 
       <Section labelledBy="poveste-title" className="!pt-0">
-        <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:gap-16">
-          <Photo k="despre" ratio="1 / 1" position="55% 40%" sizes="(min-width: 1216px) 520px, (min-width: 768px) 42vw, 100vw" />
-          <div>
-            <h2 id="poveste-title" className="sr-only">Povestea mea</h2>
-            <div className="measure grid gap-5 text-lead text-ink-2">
-              {DESPRE.paragrafe.map((p, i) => (
-                <p key={i}><OrTodo value={p.text} label="[PARAGRAF DIN PAGINA „DESPRE MINE” ACTUALĂ]" /></p>
-              ))}
-            </div>
+        <div className="container-narrow !px-0">
+          <h2 id="poveste-title" className="sr-only">Povestea mea</h2>
+          <p className="text-tagline font-medium text-ink">{intro.text}</p>
+          <div className="mt-8 grid gap-6 text-lead text-ink-2 md:grid-cols-3 md:gap-10">
+            {rest.map((p, i) => <p key={i}>{p.text}</p>)}
           </div>
         </div>
       </Section>
 
       <Section tone="gray" labelledBy="parcurs-title">
-        <div className="grid items-end gap-8 md:grid-cols-[1.4fr_0.6fr]">
-          <div>
-            <h2 id="parcurs-title" className="text-h2">Parcurs profesional.</h2>
-            <p className="measure mt-4 text-lead text-ink-2">Peste zece ani, în patru etape. Apasă pe un rol ca să vezi ce a presupus.</p>
-          </div>
-          <Photo k="parcurs" ratio="4 / 3" position="50% 35%" sizes="(min-width: 768px) 30vw, 100vw" className="hidden md:block" />
-        </div>
-        <div className="mt-14"><Timeline etape={ETAPE} /></div>
+        <ChapterHead id="parcurs-title" title="Parcurs profesional." lead="Douăsprezece roluri, în patru etape. Apasă pe un rol ca să vezi ce a presupus." />
+        <div className="mt-16"><Timeline etape={ETAPE} /></div>
       </Section>
 
       <Section labelledBy="studii-title">
-        <h2 id="studii-title" className="text-h2">Studii.</h2>
-        <ul className="mt-12 grid gap-5 md:grid-cols-3">
+        <ChapterHead id="studii-title" title="Studii." />
+        <ol className="mx-auto mt-14 grid max-w-5xl gap-10 md:grid-cols-3 md:gap-8">
           {STUDII.map((s) => (
-            <li key={s.nivel} className="reveal card p-7">
-              <p className="eyebrow">{s.nivel}</p>
-              <p className="mt-3 text-h3">{s.domeniu ?? <Todo>[DOMENIU]</Todo>}</p>
-              <p className="mt-3 text-ink-2"><OrTodo value={s.institutie} label="[INSTITUȚIE]" /></p>
-              <p className="mt-1 text-small text-ink-3 tabular-nums"><OrTodo value={s.ani} label="[ANI]" /></p>
+            <li key={s.nivel} className="border-t border-line pt-6">
+              <p className="text-small text-ink-3 tabular-nums">{s.ani}</p>
+              <h3 className="mt-2 text-h3">{s.nivel}</h3>
+              <p className="mt-1 text-lead font-medium">{s.domeniu}</p>
+              <p className="mt-2 text-ink-2">{s.institutie}</p>
             </li>
           ))}
-        </ul>
+        </ol>
       </Section>
 
       <Section tone="gray" labelledBy="faq-title">
-        <h2 id="faq-title" className="text-h2">Întrebări frecvente.</h2>
-        <div className="measure mt-10 grid gap-3">
+        <ChapterHead id="faq-title" title="Întrebări frecvente." />
+        <div className="mx-auto mt-14 max-w-3xl divide-y divide-line border-y border-line">
           {DESPRE.faq.map((f) => (
-            <details key={f.q} className="card group p-0 [&_summary::-webkit-details-marker]:hidden">
-              <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-4 px-6 py-4 font-semibold">
+            <details key={f.q} className="group [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex min-h-18 cursor-pointer list-none items-center justify-between gap-6 py-5 text-lead font-semibold">
                 {f.q}
-                <span aria-hidden="true" className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-canvas-2 text-ink-2 transition-transform duration-300 group-open:rotate-45"><Icon name="plus" className="h-5 w-5" /></span>
+                <Icon name="plus" aria-hidden="true" className="h-6 w-6 shrink-0 text-ink-3 transition-transform duration-300 group-open:rotate-45" />
               </summary>
-              <p className="px-6 pb-6 text-ink-2">{f.a}</p>
+              <p className="max-w-[62ch] pb-6 text-lead text-ink-2">{f.a}</p>
             </details>
           ))}
         </div>
       </Section>
 
       <Section labelledBy="cv-title">
-        <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
-          <div>
-            <h2 id="cv-title" className="text-h2">CV complet.</h2>
-            <p className="mt-3 text-ink-2">Toate rolurile, cu date și toate responsabilitățile.</p>
-          </div>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/despre-mine/cv" className="btn btn-primary">Vezi CV-ul complet <Icon name="arrow" className="h-5 w-5" /></Link>
-            {DESPRE.cvPdf ? (
-              <a href={DESPRE.cvPdf} className="btn btn-secondary" download><Icon name="download" className="h-5 w-5" /> Descarcă CV-ul (PDF)</a>
-            ) : (
-              <span className="btn btn-secondary" aria-disabled="true"><Icon name="download" className="h-5 w-5" /> PDF de primit de la client</span>
-            )}
-          </div>
+        <ChapterHead id="cv-title" title="CV complet." lead="Toate rolurile, cu date și toate responsabilitățile." />
+        <div className="mt-10 flex flex-col items-center justify-center gap-x-6 gap-y-2 sm:flex-row">
+          <Link href="/despre-mine/cv" className="btn btn-primary">Vezi CV-ul complet</Link>
+          {DESPRE.cvPdf && <a href={DESPRE.cvPdf} className="link-more" download>Descarcă PDF</a>}
         </div>
       </Section>
     </Page>

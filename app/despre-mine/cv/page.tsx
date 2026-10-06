@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function CvPage() {
   return (
     <Page>
-      <PageIntro eyebrow="Despre mine" title="CV complet" lead="Versiunea integrală, cu toate responsabilitățile și realizările.">
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+      <PageIntro title="CV complet." lead="Versiunea integrală, cu toate responsabilitățile și realizările.">
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link href="/despre-mine" className="btn btn-quiet -ml-2"><Icon name="back" className="h-5 w-5" /> Înapoi la Despre mine</Link>
           {DESPRE.cvPdf && <a href={DESPRE.cvPdf} download className="btn btn-secondary"><Icon name="download" className="h-5 w-5" /> Descarcă PDF</a>}
         </div>

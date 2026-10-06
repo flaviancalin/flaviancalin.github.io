@@ -12,7 +12,7 @@ export function Newsletter() {
       <div className="flex flex-col gap-3 sm:flex-row">
         <div className="flex-1">
           <label htmlFor={`${id}-email`} className="sr-only">Adresa de email</label>
-          <input id={`${id}-email`} name="email" type="email" autoComplete="email" inputMode="email" placeholder="adresa@email.ro" className="field" aria-invalid={!!f.errors.email} aria-describedby={f.errors.email ? `${id}-email-err` : undefined} />
+          <input id={`${id}-email`} name="email" type="email" spellCheck={false} autoComplete="email" inputMode="email" placeholder="nume@exemplu.ro…" className="field" aria-invalid={!!f.errors.email} aria-describedby={f.errors.email ? `${id}-email-err` : undefined} />
           <FieldError id={`${id}-email-err`} msg={f.errors.email} />
         </div>
         <button type="submit" className="btn btn-primary shrink-0" disabled={f.state === "loading"}>

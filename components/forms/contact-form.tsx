@@ -26,7 +26,7 @@ export function ContactForm() {
         </div>
         <div>
           <label htmlFor={`${id}-email`} className="label">Email</label>
-          <input id={`${id}-email`} name="email" type="email" inputMode="email" autoComplete="email" className="field" aria-invalid={!!f.errors.email} aria-describedby={f.errors.email ? `${id}-email-err` : undefined} />
+          <input id={`${id}-email`} name="email" type="email" spellCheck={false} inputMode="email" autoComplete="email" className="field" aria-invalid={!!f.errors.email} aria-describedby={f.errors.email ? `${id}-email-err` : undefined} />
           <FieldError id={`${id}-email-err`} msg={f.errors.email} />
         </div>
       </div>

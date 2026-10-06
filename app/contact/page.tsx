@@ -13,27 +13,27 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <Page>
-      <PageIntro eyebrow="Contact" title="Scrie-mi." lead="Pentru întrebări, probleme din cartier sau solicitări de presă." />
-      <Section tone="gray" labelledBy="c-form" className="!pt-14">
+      <PageIntro title="Scrie-mi." lead="Pentru întrebări, probleme din cartier sau solicitări de presă." />
+      <Section tone="gray" labelledBy="c-form">
         <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr]">
           <div className="card p-6 sm:p-10">
             <h2 id="c-form" className="mb-6 text-h3">Trimite un mesaj</h2>
             <ContactForm />
           </div>
           <aside aria-label="Date de contact" className="grid content-start gap-4">
-            <a href={SITE.contact.telefonHref} className="card flex min-h-20 items-center gap-4 p-6 hover:shadow-[var(--shadow-lift)]">
+            <a href={SITE.contact.telefonHref} className="tile-white flex min-h-20 items-center gap-4 p-6">
               <span className="grid h-11 w-11 place-items-center rounded-full bg-brand-soft text-brand"><Icon name="phone" className="h-5 w-5" /></span>
               <span><span className="block text-small text-ink-3">Telefon</span><span className="font-semibold tabular-nums">{SITE.contact.telefon}</span></span>
             </a>
-            <a href={`mailto:${SITE.contact.email}`} className="card flex min-h-20 items-center gap-4 p-6 hover:shadow-[var(--shadow-lift)]">
+            <a href={`mailto:${SITE.contact.email}`} className="tile-white flex min-h-20 items-center gap-4 p-6">
               <span className="grid h-11 w-11 place-items-center rounded-full bg-brand-soft text-brand"><Icon name="mail" className="h-5 w-5" /></span>
               <span className="min-w-0"><span className="block text-small text-ink-3">Email</span><span className="block break-all font-semibold">{SITE.contact.email}</span></span>
             </a>
-            <div className="card flex items-center gap-4 p-6">
+            <div className="tile-white flex items-center gap-4 p-6">
               <span className="grid h-11 w-11 place-items-center rounded-full bg-brand-soft text-brand"><Icon name="pin" className="h-5 w-5" /></span>
               <span><span className="block text-small text-ink-3">Locul</span><span className="font-semibold">{SITE.oras}</span></span>
             </div>
-            <div className="card p-6">
+            <div className="tile-white p-6">
               <p className="text-small text-ink-3">Rețele sociale</p>
               <ul className="mt-2 grid">
                 {SITE.social.map((s) => (

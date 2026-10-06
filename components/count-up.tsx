@@ -37,8 +37,8 @@ export function CountUp({ value, prefix = "", suffix = "" }: { value: number; pr
   return (
     <span ref={ref} className="tabular-nums">
       {prefix}
-      <span className="inline-block text-right" style={{ minWidth: `${String(value).length}ch` }}>{shown}</span>
-      {suffix}
+      <span className="inline-block text-left" style={{ minWidth: `${String(value).length}ch` }}>{shown}</span>
+      {suffix && <span className="ml-[0.08em] text-[0.5em] font-semibold tracking-tight">{suffix.trim()}</span>}
     </span>
   );
 }

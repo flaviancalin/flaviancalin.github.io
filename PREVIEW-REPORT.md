@@ -97,7 +97,7 @@ Fișiere rezultate:
    - roșul `#eb3e40`, cea mai frecventă culoare din CSS, vine din tema demo și nu e folosit ca text (contrast insuficient).
 2. **Tipografie:** site-ul vechi folosea Poppins. Brief-ul cere stack-ul Apple (SF), cu Inter ca fallback, deci l-am urmat. Inter nu se preîncarcă, pentru că pe dispozitivele Apple nu e folosit.
 3. **Logo:** monograma „C/R” cu săgeată (`logofinal`) e logo-ul actual. Emblema rotundă cu siluetă pare o versiune mai veche și nu e folosită. Pentru că nu exista SVG, am vectorizat monograma automat (`public/brand/monogram.svg`) și am verificat-o vizual față de original. Favicon-ul e monograma albă pe albastru.
-4. **Fotografii** (5 + logo, sub limita de 6–8):
+4. **Fotografii** (versiunea 1; în versiunea 2 au rămas 4, vezi „Restilizarea”):
 
    | Unde | Fișier | Dimensiune |
    |---|---|---|
@@ -127,6 +127,27 @@ Fișiere rezultate:
 11. **Footer** fără ANPC/ODR. Preview-ul întreg e `noindex` (meta + `robots.txt`).
 12. **Admin demo:** 64 de sesizări fictive generate determinist, cu banner „DEMO”.
 
+## Restilizarea (versiunea 2, după feedback)
+
+Referința din brief e stilul Apple. Prima versiune era corectă, dar generică: carduri identice cu umbră, eyebrow deasupra fiecărui titlu și reveal pe fiecare secțiune, adică exact tiparele pe care `frontend-design` le enumeră ca semne de design generat. Ce s-a schimbat:
+
+- **Capitole**, ca pe paginile de produs Apple: titlu centrat (până la 88px), o singură frază dedesubt, apoi o imagine mare cu colțuri de 28px. Alternanță alb / gri `#f5f5f7`.
+- **Un singur moment îndrăzneț:** cifrele-cheie pe un capitol bleumarin (`#0b1f35`), cu cifre de până la 112px și unitățile (mld €, mil €) la jumătate de mărime, ca în specificațiile Apple.
+- **Plăci plate** în loc de carduri cu umbră. Umbra rămâne doar pe suprafețele de formular și pe panoul admin.
+- **Nav subțire** (52px, linkuri de 14px, buton mic pe fundal plin), translucid. Meniul mobil ocupă tot ecranul, cu linkuri de 28px.
+- **Butoane și linkuri:** butonul principal plin și linkuri text („Alătură-te campaniei”, „Tot programul”), fără săgeți adăugate.
+- **Mișcare:** doar două momente automate:
+  - imaginea mare „se așază” (scale 0.92 → 1) când intră în ecran, doar cu CSS;
+  - cifrele cresc.
+  - Tranziția între pagini și expand-urile rămân.
+- **Elementul specific acestui site:** pe Acasă, cele 9 categorii reale de sesizări sunt butoane. Fiecare deschide formularul direct la pasul 2, cu categoria aleasă (`/spune-mi-problema?categorie=iluminat`).
+- **Despre mine:**
+  - deschidere cu portretul de la birou pe toată lățimea;
+  - povestea: un paragraf mare, urmat de trei coloane;
+  - studiile ca specificații cu filet, nu carduri;
+  - FAQ ca listă cu separatoare.
+- **Fotografii:** poza de la masa ședinței (1080px) nu mai e folosită. Au rămas 4 fotografii: hero, Despre mine, Implică-te, kitul de presă.
+
 ## Contrast (WCAG AA)
 
 `node scripts/contrast.mjs --md`. Toate perechile folosite trec AA.
@@ -146,15 +167,17 @@ Fișiere rezultate:
 | danger #b42318 | canvas #ffffff | 6.57:1 | da |
 | ok #1f7a3a | canvas #ffffff | 5.38:1 | da |
 
-## Lighthouse (mobil, build de producție, local, cu pozele reale)
+## Lighthouse (mobil, build de producție, local, după restilizare)
 
 | Pagină | Performance | Accessibility | Best Practices | SEO |
 |---|---|---|---|---|
-| Acasă `/` | 95–98 (85 la prima rulare, înainte ca imaginea să fie în cache) | 100 | 100 | 66* |
-| Formular `/spune-mi-problema` | 92–95 | 100 | 100 | 69* |
-| Despre mine `/despre-mine` | 96 | 100 | 100 | 69* |
+| Acasă `/` | 96 | 100 | 100 | 66* |
+| Formular `/spune-mi-problema` | 94 | 100 | 100 | 69* |
+| Despre mine `/despre-mine` | 97 | 100 | 100 | 69* |
 
-\* Singurul audit SEO picat e `is-crawlable`, din cauza `noindex` pus intenționat pe preview. Rapoartele sunt în `qa/lighthouse/`. Pe Vercel, cifrele se re-măsoară: imaginile optimizate stau în cache pe CDN, iar tile-urile de hartă (blocate în mediul de lucru) vor apărea.
+Măsurat la a doua rulare, cu imaginile optimizate deja în cache. CLS = 0 pe toate.
+
+\* Singurul audit SEO picat e `is-crawlable`, din cauza `noindex` pus intenționat pe preview. Rapoartele sunt în `qa/lighthouse/`.
 
 ## QA vizual
 
@@ -172,36 +195,42 @@ Fișiere rezultate:
 
 ## Skill-uri
 
-Skill-urile din brief (`frontend-design`, `vercel-react-best-practices`, `vercel-composition-patterns`, `react-view-transitions`, `web-design-guidelines`, `writing-guidelines`, `vercel-deploy-claimable`) **nu sunt instalate** în acest mediu:
-
-```bash
-npx skills add vercel-labs/agent-skills
-```
-
-Am aplicat manual principiile lor:
-
-- componente server implicit; Leaflet și zod încărcate dinamic;
-- `ViewTransition` după ghidul din `node_modules/next/dist/docs`;
-- accesibilitate: skip link, focus vizibil, `aria-current`, `aria-expanded`, `aria-invalid` + `aria-describedby`, ținte ≥ 44px, zoom permis, `lang="ro"`.
-
-Auditul formal `web-design-guidelines` trebuie rulat după instalare.
+- **Folosite din sistem** (`/mnt/skills/public`): `frontend-design`, pentru direcția estetică și auto-critica de design.
+- **Instalate în proiect** (`.claude/skills/`, versiunile fixate în `skills-lock.json`) cu `npx skills add vercel-labs/agent-skills`:
+  - `vercel-react-best-practices`, `vercel-composition-patterns`, `vercel-react-view-transitions`;
+  - `web-design-guidelines`, `writing-guidelines`;
+  - `vercel-cli-with-tokens`, pentru publicare când există un token.
+- **`web-design-guidelines`**, rulat cu regulile la zi. Am aplicat:
+  - `spellCheck={false}` pe câmpurile de email;
+  - `name` pe toate câmpurile;
+  - placeholdere care se termină cu „…”;
+  - `touch-action: manipulation` pe butoane;
+  - `overscroll-behavior` (pagina pe pointer fin, meniul mobil);
+  - culori explicite pe `<select>`;
+  - `translate="no"` pe numele candidatului.
+- Regulile din aceeași listă pe care le-am lăsat deliberat deoparte:
+  - „Title Case” pentru titluri: e o convenție din engleză; în română se scrie normal.
+  - „evită persoana I”: vocea campaniei e chiar persoana I a candidatului.
+  - starea filtrelor din admin în URL: e doar un demo.
 
 ## De verificat cu clientul
 
-1. **Date suprapuse:**
-   - „Consilier, Serviciul Corp Control” (DGASPC S4) și „Consilier parlamentar” (Senat) sunt ambele **02.07.2024 – 31.07.2024**;
-   - „Consilier, Guvernul României” (01.05.2020 – 15.03.2021) se suprapune cu „Consilier, Camera Deputaților” (01.08.2019 – 15.03.2021);
-   - „DO MI NO CR Consulting” (25.10.2022 – 01.07.2024) se suprapune cu „BEST SMART DIGITAL” (18.10.2022 – 01.03.2023).
-2. **„Coordonator la Comisia Europeană”** apare în FAQ (proiectul de digitalizare a energiei, 350 de IMM-uri), dar nu și în cronologie sau în CV. E proiectul de la BEST SMART DIGITAL? Până la confirmare, am scos din FAQ formularea „în calitate de Coordonator la Comisia Europeană”.
-3. **Nokian:** pe Acasă scrie „facilitarea investiției”, iar în FAQ „am coordonat și implementat investiția”. Care e formularea corectă? La fel pentru Clariant. Fiecare cifră are câmpul `sursa`, pentru un link verificabil.
-4. **Experiența:** „aproximativ 10 ani” (Despre mine) față de „peste un deceniu” (titlul de pe Acasă). Cronologia începe în 2014.
-5. **CV-ul PDF public** conține emailul personal `catalin.renghea@gmail.com`. Rămâne public sau facem o versiune doar cu `office@`?
-6. **Pe site-ul actual sunt acum online** pagini demo cu cifre false (Program: „48600 People have joined”, „$58,466 strânși prin contribuții”; News: 6 articole lorem ipsum) și pagina de autor `securmenow`. Recomand scoaterea lor imediat, independent de preview.
-7. **Termenii și condițiile** conțin încă placeholder-ele șablonului: „[Numele Politicianului]” și „[link către Politica de Confidențialitate]”. Le preia juristul.
-8. **Sloganul**, subtitlurile temelor și biografia scurtă din kitul de presă sunt propuneri care trebuie aprobate.
-9. **Lista de cartiere** din formular (exemplu: Berceni, Brâncoveanu, Olteniței, Tineretului, Văcărești, Giurgiului, Progresul, Apărătorii Patriei, Timpuri Noi).
-10. **LinkedIn:** URL-ul e construit din handle (`/in/cătălin-renghea/`). De confirmat.
-11. **Logo:** există un SVG original al monogramei? Cel din preview e vectorizat automat.
+Rezolvate de client pe 6 octombrie:
+
+- Perioadele care se suprapun sunt corecte (funcții simultane). Rămân așa.
+- Formularea „În calitate de Coordonator la Comisia Europeană…” din FAQ rămâne.
+- Pentru Nokian și Clariant formularea e „am coordonat și implementat”.
+- CV-ul PDF rămâne cum e, cu emailul personal.
+
+Încă deschise:
+
+1. **Pe site-ul actual sunt acum online** pagini demo cu cifre false (Program: „48600 People have joined”, „$58,466 strânși prin contribuții”; News: 6 articole lorem ipsum) și pagina de autor `securmenow`. Recomand scoaterea lor imediat, independent de preview.
+2. **Termenii și condițiile** conțin încă placeholder-ele șablonului: „[Numele Politicianului]” și „[link către Politica de Confidențialitate]”. Le preia juristul.
+3. **„Aproximativ 10 ani”** (Despre mine) față de **„peste un deceniu”** (titlul de pe Acasă). Cronologia începe în 2014, deci „peste zece ani” e corect. Preview-ul folosește „peste zece ani” în titluri și păstrează „aproximativ 10 ani” în textul citat.
+4. **Sloganul**, subtitlurile temelor și biografia scurtă din kitul de presă sunt propuneri care trebuie aprobate.
+5. **Lista de cartiere** din formular (exemplu: Berceni, Brâncoveanu, Olteniței, Tineretului, Văcărești, Giurgiului, Progresul, Apărătorii Patriei, Timpuri Noi).
+6. **LinkedIn:** URL-ul e construit din handle (`/in/cătălin-renghea/`). De confirmat.
+7. **Logo:** există un SVG original al monogramei? Cel din preview e vectorizat automat.
 
 ## Ce lipsește (de primit de la client)
 

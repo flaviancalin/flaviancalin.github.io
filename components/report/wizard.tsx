@@ -31,10 +31,11 @@ type Date_ = {
 
 const initial: Date_ = { categorie: "", pos: CENTRU_S4, cartier: "", adresa: "", descriere: "", foto: null, email: "", telefon: "", consimtamant: false, website: "" };
 
-export function ReportWizard() {
+export function ReportWizard({ categorie }: { categorie?: string }) {
   const uid = useId();
-  const [pas, setPas] = useState(1);
-  const [d, setD] = useState<Date_>(initial);
+  // Venit dintr-o categorie de pe Acasă: categoria e deja aleasă, începem cu locul.
+  const [pas, setPas] = useState(categorie ? 2 : 1);
+  const [d, setD] = useState<Date_>(() => ({ ...initial, categorie: categorie ?? "" }));
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
   const [serverError, setServerError] = useState<string>();
@@ -160,7 +161,7 @@ export function ReportWizard() {
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               <div>
                 <label htmlFor={`${uid}-cartier`} className="label">Cartierul</label>
-                <select id={`${uid}-cartier`} className="field" value={d.cartier} onChange={(e) => set("cartier", e.target.value)} aria-invalid={!!err("cartier")} aria-describedby={err("cartier") ? errId("cartier") : undefined}>
+                <select id={`${uid}-cartier`} name="cartier" className="field" value={d.cartier} onChange={(e) => set("cartier", e.target.value)} aria-invalid={!!err("cartier")} aria-describedby={err("cartier") ? errId("cartier") : undefined}>
                   <option value="">Alege…</option>
                   {CARTIERE.map((c) => <option key={c}>{c}</option>)}
                 </select>
@@ -168,7 +169,7 @@ export function ReportWizard() {
               </div>
               <div>
                 <label htmlFor={`${uid}-adresa`} className="label">Strada sau un reper <span className="font-normal text-ink-3">(opțional)</span></label>
-                <input id={`${uid}-adresa`} className="field" value={d.adresa} onChange={(e) => set("adresa", e.target.value)} autoComplete="street-address" placeholder="Ex.: lângă stația de autobuz" />
+                <input id={`${uid}-adresa`} name="adresa" className="field" value={d.adresa} onChange={(e) => set("adresa", e.target.value)} autoComplete="street-address" placeholder="Ex.: lângă stația de autobuz…" />
               </div>
             </div>
           </div>
@@ -179,7 +180,7 @@ export function ReportWizard() {
             <h2 id={`${uid}-h`} ref={heading} tabIndex={-1} className="text-h3 outline-none">Ce se întâmplă?</h2>
             <div className="mt-6">
               <label htmlFor={`${uid}-desc`} className="label">Descrie pe scurt, în 1–2 propoziții</label>
-              <textarea id={`${uid}-desc`} className="field min-h-36 resize-y" maxLength={500} value={d.descriere} onChange={(e) => set("descriere", e.target.value)} aria-invalid={!!err("descriere")} aria-describedby={`${uid}-desc-hint${err("descriere") ? ` ${errId("descriere")}` : ""}`} placeholder="Ex.: Stâlpul din fața blocului nu mai luminează de două săptămâni." />
+              <textarea id={`${uid}-desc`} name="descriere" className="field min-h-36 resize-y" maxLength={500} value={d.descriere} onChange={(e) => set("descriere", e.target.value)} aria-invalid={!!err("descriere")} aria-describedby={`${uid}-desc-hint${err("descriere") ? ` ${errId("descriere")}` : ""}`} placeholder="Ex.: Stâlpul din fața blocului nu mai luminează de două săptămâni…" />
               <p id={`${uid}-desc-hint`} className="hint mt-1 text-right tabular-nums">{d.descriere.length} / 500</p>
               <FieldError id={errId("descriere")} msg={err("descriere")} />
             </div>
@@ -210,12 +211,12 @@ export function ReportWizard() {
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               <div>
                 <label htmlFor={`${uid}-email`} className="label">Email</label>
-                <input id={`${uid}-email`} type="email" inputMode="email" autoComplete="email" className="field" value={d.email} onChange={(e) => set("email", e.target.value)} aria-invalid={!!err("contact.email")} aria-describedby={err("contact.email") ? errId("contact.email") : undefined} />
+                <input id={`${uid}-email`} name="email" type="email" spellCheck={false} inputMode="email" autoComplete="email" className="field" value={d.email} onChange={(e) => set("email", e.target.value)} aria-invalid={!!err("contact.email")} aria-describedby={err("contact.email") ? errId("contact.email") : undefined} />
                 <FieldError id={errId("contact.email")} msg={err("contact.email")} />
               </div>
               <div>
                 <label htmlFor={`${uid}-tel`} className="label">Telefon</label>
-                <input id={`${uid}-tel`} type="tel" inputMode="tel" autoComplete="tel" className="field" value={d.telefon} onChange={(e) => set("telefon", e.target.value)} aria-invalid={!!err("contact.telefon")} aria-describedby={err("contact.telefon") ? errId("contact.telefon") : undefined} />
+                <input id={`${uid}-tel`} name="telefon" type="tel" inputMode="tel" autoComplete="tel" className="field" value={d.telefon} onChange={(e) => set("telefon", e.target.value)} aria-invalid={!!err("contact.telefon")} aria-describedby={err("contact.telefon") ? errId("contact.telefon") : undefined} />
                 <FieldError id={errId("contact.telefon")} msg={err("contact.telefon")} />
               </div>
             </div>
