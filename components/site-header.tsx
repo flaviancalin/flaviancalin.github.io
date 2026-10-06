@@ -32,9 +32,9 @@ export function SiteHeader() {
         Sari la conținut
       </a>
       <div className="container-x flex h-16 items-center justify-between gap-4">
-        <Link href="/" className="flex min-h-11 items-center gap-2 font-semibold tracking-tight" aria-label="Cătălin Renghea, pagina principală">
+        <Link href="/" className="flex min-h-11 items-center gap-2 font-semibold tracking-tight">
           <span aria-hidden="true" className="grid h-8 w-8 place-items-center rounded-full bg-brand text-[0.8rem] font-bold text-white">CR</span>
-          <span className="text-[1.0625rem]">Cătălin Renghea</span>
+          <span className="text-[1.0625rem]">Cătălin Renghea<span className="sr-only">, pagina principală</span></span>
         </Link>
 
         <nav aria-label="Navigare principală" className="hidden lg:block">

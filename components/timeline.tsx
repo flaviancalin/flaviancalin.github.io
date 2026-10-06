@@ -65,7 +65,7 @@ export function Timeline({ etape }: { etape: Etapa[] }) {
             <h3 className="mt-2 text-h3">{e.titlu}</h3>
             <p className="mt-3 text-ink-2">{e.rezumat}</p>
           </div>
-          <ul className="grid gap-3">
+          <ul className="grid content-start gap-3">
             {e.joburi.map((j) => <JobCard key={j.id} job={j} />)}
           </ul>
         </li>

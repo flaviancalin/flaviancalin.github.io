@@ -1,12 +1,11 @@
 "use client";
 
 import { useId } from "react";
-import { newsletterSchema } from "@/lib/schemas";
 import { useDemoForm, FormStatus, Consent, Honeypot, FieldError } from "./forms/form-kit";
 
 export function Newsletter() {
   const id = useId();
-  const f = useDemoForm(newsletterSchema, "newsletter");
+  const f = useDemoForm(() => import("@/lib/schemas").then((m) => m.newsletterSchema), "newsletter");
   return (
     <form onSubmit={f.onSubmit} noValidate className="mx-auto grid max-w-xl gap-4" aria-describedby={`${id}-desc`}>
       <p id={`${id}-desc`} className="sr-only">Abonare la noutăți. În preview nu se salvează nimic.</p>

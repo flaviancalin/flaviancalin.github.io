@@ -136,7 +136,7 @@ export function ReportWizard() {
               {CATEGORII.map((c) => {
                 const on = d.categorie === c.id;
                 return (
-                  <label key={c.id} className={`relative flex min-h-28 cursor-pointer flex-col justify-between gap-3 rounded-2xl border-2 p-4 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-brand ${on ? "border-brand bg-brand-soft" : "border-line bg-canvas hover:border-[#c7c7cf]"}`}>
+                  <label key={c.id} className={`relative flex min-h-28 last:col-span-2 sm:last:col-span-1 cursor-pointer flex-col justify-between gap-3 rounded-2xl border-2 p-4 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-brand ${on ? "border-brand bg-brand-soft" : "border-line bg-canvas hover:border-[#c7c7cf]"}`}>
                     <input type="radio" name="categorie" value={c.id} checked={on} onChange={() => set("categorie", c.id)} className="sr-only" />
                     <Icon name={c.icon} className={`h-7 w-7 ${on ? "text-brand" : "text-ink-2"}`} />
                     <span className="font-semibold leading-snug">{c.titlu}</span>

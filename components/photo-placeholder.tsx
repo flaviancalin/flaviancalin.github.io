@@ -1,10 +1,10 @@
 /** Placeholder gri pentru fotografii lipsă. Nu folosim poze stock. */
-export function PhotoPlaceholder({ label = "FOTO DE ÎNLOCUIT", hint, ratio = "4 / 5", className = "" }: { label?: string; hint?: string; ratio?: string; className?: string }) {
+export function PhotoPlaceholder({ label = "FOTO DE ÎNLOCUIT", hint, ratio = "4 / 5", className = "", align = "center" }: { label?: string; hint?: string; ratio?: string; className?: string; align?: "center" | "bottom" }) {
   return (
     <div
       role="img"
       aria-label={`${label}${hint ? `: ${hint}` : ""}`}
-      className={`relative grid place-items-center overflow-hidden rounded-[var(--radius-card)] bg-canvas-3 text-ink-3 ${className}`}
+      className={`relative grid ${align === "bottom" ? "place-items-end center pb-5" : "place-items-center"} overflow-hidden rounded-[var(--radius-card)] bg-canvas-3 text-ink-3 ${className}`}
       style={{ aspectRatio: ratio }}
     >
       <svg className="absolute inset-0 h-full w-full opacity-40" aria-hidden="true">
@@ -15,7 +15,7 @@ export function PhotoPlaceholder({ label = "FOTO DE ÎNLOCUIT", hint, ratio = "4
         </defs>
         <rect width="100%" height="100%" fill="url(#ph-diag)" />
       </svg>
-      <div className="relative px-4 text-center">
+      <div className="relative w-full px-4 text-center">
         <p className="text-small font-semibold tracking-wide">{label}</p>
         {hint && <p className="mt-1 text-small">{hint}</p>}
       </div>

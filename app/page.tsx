@@ -13,10 +13,10 @@ export default function Home() {
     <Page>
       {/* Hero: un singur mesaj, portret mare, CTA dublu */}
       <section aria-labelledby="hero-title" className="overflow-hidden">
-        <div className="container-x grid items-center gap-10 pt-10 pb-16 md:grid-cols-[1.1fr_0.9fr] md:gap-16 md:pt-20 md:pb-28">
-          <div className="order-2 md:order-1">
+        <div className="container-x grid items-center gap-10 pt-10 pb-16 md:pt-16 md:pb-24 lg:grid-cols-[1.5fr_0.7fr] lg:gap-12 lg:pt-20 lg:pb-28">
+          <div className="order-2 lg:order-1">
             <p className="eyebrow mb-4">{SITE.nume} · {SITE.rol}</p>
-            <h1 id="hero-title" className="text-hero max-w-[14ch]">{SITE.slogan}</h1>
+            <h1 id="hero-title" className="text-hero max-w-[16ch]">{SITE.slogan.replace("Sectorul 4", "Sectorul\u00a04")}</h1>
             <p className="measure mt-6 text-lead text-ink-2">
               Spune-mi ce nu merge pe strada ta. Fiecare sesizare primește un cod de referință, ca s-o poți urmări.
             </p>
@@ -25,8 +25,8 @@ export default function Home() {
               <Link href="/implica-te" className="btn btn-secondary">Alătură-te</Link>
             </div>
           </div>
-          <div className="order-1 md:order-2">
-            <PhotoPlaceholder hint="Portret principal, vertical, minimum 1600px" ratio="4 / 5" className="mx-auto w-full max-w-md md:max-w-none" />
+          <div className="order-1 lg:order-2">
+            <PhotoPlaceholder hint="Portret principal, vertical, minimum 1600px" ratio="4 / 5" className="mx-auto max-h-[40svh] w-full max-w-md lg:max-h-none lg:max-w-none" />
           </div>
         </div>
       </section>
@@ -38,7 +38,7 @@ export default function Home() {
           {CIFRE.map((c) => (
             <div key={c.id} className="reveal border-t border-black/10 pt-6">
               <dt className="sr-only">{c.eticheta}</dt>
-              <dd className="text-[clamp(2.75rem,2rem+3vw,4.25rem)] font-semibold leading-none tracking-tight text-brand">
+              <dd className="whitespace-nowrap text-[clamp(2.5rem,1.9rem+2vw,3.75rem)] font-semibold leading-none tracking-tight text-brand">
                 <CountUp value={c.valoare} prefix={c.prefix} suffix={c.sufix} />
               </dd>
               <dd className="mt-3 text-ink-2" aria-hidden="true">{c.eticheta}</dd>
@@ -55,7 +55,7 @@ export default function Home() {
             <p className="measure mt-5 text-lead text-ink-2">Un scurt video de prezentare va sta aici.</p>
           </div>
           <div className="reveal relative">
-            <PhotoPlaceholder label="VIDEO DE ÎNLOCUIT" hint="Video de prezentare, 16:9, cu subtitrare" ratio="16 / 9" />
+            <PhotoPlaceholder label="VIDEO DE ÎNLOCUIT" hint="Video de prezentare, 16:9, cu subtitrare" ratio="16 / 9" align="bottom" />
             <span aria-hidden="true" className="absolute left-1/2 top-1/2 grid h-16 w-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white/90 text-ink shadow-[var(--shadow-lift)]">
               <Icon name="play" className="ml-1 h-7 w-7" fill="currentColor" />
             </span>

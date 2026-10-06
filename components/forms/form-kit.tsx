@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import type { z } from "zod";
-import { eroriPeCampuri } from "@/lib/schemas";
+import { eroriPeCampuri } from "@/lib/errors";
 
 export type FormState = "idle" | "loading" | "ok" | "error";
 
@@ -25,8 +25,11 @@ export async function postForm(url: string, data: unknown) {
   return json;
 }
 
-/** Formular simplu: validare zod în client, apoi POST la /api/formular/[tip] (care doar validează). */
-export function useDemoForm<S extends z.ZodType>(schema: S, tip: string) {
+/**
+ * Formular simplu: validare zod în client, apoi POST la /api/formular/[tip] (care doar validează).
+ * Schema se încarcă abia la trimitere, ca zod să nu fie în JS-ul inițial al paginii.
+ */
+export function useDemoForm(loadSchema: () => Promise<z.ZodType>, tip: string) {
   const [state, setState] = useState<FormState>("idle");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [serverError, setServerError] = useState<string>();
@@ -35,6 +38,7 @@ export function useDemoForm<S extends z.ZodType>(schema: S, tip: string) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = formToObject(form);
+    const schema = await loadSchema();
     const parsed = schema.safeParse(data);
     if (!parsed.success) {
       const errs = eroriPeCampuri(parsed.error);

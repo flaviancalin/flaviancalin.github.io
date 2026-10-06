@@ -5,7 +5,8 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SITE, SITE_URL } from "@/lib/content";
 
-const inter = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-inter", display: "swap" });
+const inter = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-inter", display: "swap", preload: false });
+// preload: false — pe dispozitivele Apple se folosește SF; Inter se descarcă doar unde chiar e nevoie.
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

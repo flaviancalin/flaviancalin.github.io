@@ -1,7 +1,6 @@
 "use client";
 
 import { useId, useState } from "react";
-import { implicareSchema } from "@/lib/schemas";
 import { CARTIERE } from "@/lib/content";
 import { Consent, FieldError, FormStatus, Honeypot, useDemoForm } from "./form-kit";
 
@@ -13,7 +12,7 @@ const TIPURI = [
 
 export function InvolveForm() {
   const id = useId();
-  const f = useDemoForm(implicareSchema, "implicare");
+  const f = useDemoForm(() => import("@/lib/schemas").then((m) => m.implicareSchema), "implicare");
   const [tip, setTip] = useState<string>("voluntar");
   return (
     <form onSubmit={f.onSubmit} noValidate className="grid gap-6">

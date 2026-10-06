@@ -74,11 +74,4 @@ export const newsletterSchema = z.object({
 export const formulare = { implicare: implicareSchema, contact: contactSchema, newsletter: newsletterSchema } as const;
 export type TipFormular = keyof typeof formulare;
 
-export function eroriPeCampuri(err: z.ZodError) {
-  const out: Record<string, string> = {};
-  for (const i of err.issues) {
-    const k = i.path.join(".") || "_";
-    if (!out[k]) out[k] = i.message;
-  }
-  return out;
-}
+export { eroriPeCampuri } from "./errors";

@@ -2,12 +2,11 @@
 
 import { useId } from "react";
 import Link from "next/link";
-import { contactSchema } from "@/lib/schemas";
 import { Consent, FieldError, FormStatus, Honeypot, useDemoForm } from "./form-kit";
 
 export function ContactForm() {
   const id = useId();
-  const f = useDemoForm(contactSchema, "contact");
+  const f = useDemoForm(() => import("@/lib/schemas").then((m) => m.contactSchema), "contact");
   return (
     <form onSubmit={f.onSubmit} noValidate className="grid gap-5">
       <div>
