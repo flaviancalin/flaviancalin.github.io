@@ -242,12 +242,10 @@ Rezolvate de client pe 6 octombrie:
 
 ## Cum se publică
 
-Mediul de lucru nu ajunge la Vercel. Variante:
+Repo-ul e conectat la Vercel (proiect creat din GitHub, 6 octombrie). Fiecare push pe branch-ul `claude/catalin-renghea-site-preview-6ttrc9` creează automat un **Preview Deployment**. URL-ul apare în Vercel → proiect → Deployments, la acest branch.
 
-1. **Din calculatorul agenției:** `npx vercel` în acest repo (framework detectat automat), apoi `vercel --prod` sau doar URL-ul de preview.
-2. **Din acest mediu:** se adaugă `vercel.com` și `api.vercel.com` în setările de rețea ale mediului (Network access → Custom → Allowed domains) și un `VERCEL_TOKEN` ca secret.
-
-După publicare, `NEXT_PUBLIC_SITE_URL` se setează la URL-ul real (pentru Open Graph și sitemap).
+- `main` conține site-ul vechi de GitHub Pages, de aceea deploy-ul de producție al proiectului dă 404. Pentru lansare, branch-ul se unește în `main` (sau se setează în Vercel ca Production Branch).
+- Variabila `NEXT_PUBLIC_SITE_URL` se setează în Vercel → Settings → Environment Variables cu URL-ul final (pentru Open Graph și sitemap).
 
 ## Structură pentru Webflow
 
