@@ -1,8 +1,23 @@
 {
-  "_nota": "Instituțiile și anii se completează din site-ul actual.",
+  "_nota": "Din CV-ul PDF (Mihai-Catalin-Renghea-CV-RO-1.pdf) și FAQ-ul de pe pagina principală.",
   "studii": [
-    { "nivel": "Doctorat", "domeniu": "Științe Politice", "institutie": null, "ani": null },
-    { "nivel": "Master", "domeniu": null, "institutie": null, "ani": null },
-    { "nivel": "Licență", "domeniu": null, "institutie": null, "ani": null }
+    {
+      "nivel": "Doctorat",
+      "domeniu": "Științe Politice",
+      "institutie": "Școala Doctorală de Științe Politice, Universitatea din București",
+      "ani": "2018–2021"
+    },
+    {
+      "nivel": "Master",
+      "domeniu": "Relații Internaționale și Integrare Europeană",
+      "institutie": "SNSPA (Școala Națională de Studii Politice și Administrative)",
+      "ani": "2016–2018"
+    },
+    {
+      "nivel": "Licență",
+      "domeniu": "Comunicare și Relații Publice",
+      "institutie": "Facultatea de Comunicare și Relații Publice, SNSPA",
+      "ani": "2013–2016"
+    }
   ]
 }

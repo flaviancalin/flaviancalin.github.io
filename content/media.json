@@ -1,0 +1,46 @@
+{
+  "_nota": "Fotografiile alese pentru preview (maximum 6-8 pe site), din inventarul content/images.json.",
+  "foto": {
+    "hero": {
+      "src": "/images/whatsapp-image-2026-02-16-at-09.16.11.jpeg",
+      "latime": 1366,
+      "inaltime": 2048,
+      "alt": "Cătălin Renghea, zâmbind, în costum închis, pe o alee cu copaci",
+      "lowRes": false
+    },
+    "despre": {
+      "src": "/images/whatsapp-image-2026-02-16-at-09.16.12.jpeg",
+      "latime": 2048,
+      "inaltime": 2048,
+      "alt": "Cătălin Renghea la biroul său, cu drapelul României în fundal",
+      "lowRes": false
+    },
+    "parcurs": {
+      "src": "/images/whatsapp-image-2025-09-17-at-10.50.37_9542c170.jpg",
+      "latime": 1080,
+      "inaltime": 1620,
+      "alt": "Cătălin Renghea la masa unei ședințe, cu microfon și documente în față",
+      "lowRes": true
+    },
+    "implica": {
+      "src": "/images/whatsapp-image-2025-09-18-at-13.29.36_7ba4c000.jpg",
+      "latime": 1366,
+      "inaltime": 2048,
+      "alt": "Cătălin Renghea pe o alee, cu brațele deschise, primitor",
+      "lowRes": false
+    },
+    "presa": {
+      "src": "/images/alx4486-transformed.jpeg",
+      "latime": 1740,
+      "inaltime": 1902,
+      "alt": "Portret oficial al lui Cătălin Renghea, cu brațele încrucișate, pe fundal albastru",
+      "lowRes": false
+    }
+  },
+  "logo": {
+    "monograma": "/brand/monogram.svg",
+    "monogramaNota": "Vectorizată automat din /images/2.png. De înlocuit cu SVG-ul original al designerului, dacă există.",
+    "completPng": "/images/1.png",
+    "alt": "Logo Cătălin Renghea"
+  }
+}

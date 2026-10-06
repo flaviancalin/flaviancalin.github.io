@@ -1,109 +1,213 @@
 {
-  "_nota": "Cronologie comprimată în 4 etape. Joburile și grupările vin din brief; perioadele, responsabilitățile și realizările se completează din textul scrapat (fără rescriere în sens). Câmpurile goale apar pe site ca '[DE COMPLETAT DIN SITE-UL ACTUAL]'.",
+  "_nota": "Cronologie comprimată în 4 etape, din pagina 'Despre mine' și lista 'Munca mea' de pe catalinrenghea.ro (verificat cu CV-ul PDF). Fiecare job apare o singură dată. Responsabilitățile (max. 3) și realizările (1-2) sunt citate din textul original; s-au corectat doar greșelile evidente ('Consiler', 'Ministrul Economiei', titlul tăiat al DGASPC). Ordinea etapelor e cea din brief; în fiecare etapă, cel mai recent job e primul.",
   "etape": [
     {
       "id": "guvern",
       "titlu": "Guvern și ministere",
-      "rezumat": "Consilier pentru trei prim-miniștri. Roluri în Guvern și la Ministerul Economiei.",
+      "rezumat": "Consilier în Guvernul României și la Ministerul Economiei. Consilier pentru trei prim-miniștri.",
       "joburi": [
         {
-          "id": "guvern-consilier",
-          "rol": "Consilier al prim-ministrului",
+          "id": "guvern",
+          "rol": "Consilier",
           "organizatie": "Guvernul României",
-          "perioada": null,
-          "responsabilitati": [],
-          "realizari": []
-        },
-        {
-          "id": "sef-cabinet",
-          "rol": "Șef de cabinet",
-          "organizatie": null,
-          "perioada": null,
-          "responsabilitati": [],
-          "realizari": []
+          "perioada": "01.05.2020 – 15.03.2021",
+          "responsabilitati": [
+            "Coordonează activitatea cabinetului.",
+            "Coordonează activitatea Oficiului Român pentru Drepturi de Autor.",
+            "Reprezintă instituția ca membru în comitetul ministerial pentru Republica Moldova."
+          ],
+          "realizari": [
+            "Coordonarea strategică a Oficiului Român pentru Drepturi de Autor, contribuind la modernizarea proceselor administrative.",
+            "Consolidarea colaborării interinstituționale prin implicarea activă în comitetul pentru Republica Moldova."
+          ]
         },
         {
           "id": "min-economiei",
-          "rol": null,
+          "rol": "Consilier",
           "organizatie": "Ministerul Economiei",
-          "perioada": null,
-          "responsabilitati": [],
-          "realizari": []
-        },
-        {
-          "id": "corp-control",
-          "rol": "Corp de control",
-          "organizatie": null,
-          "perioada": "02–31.07.2024",
-          "responsabilitati": [],
-          "realizari": []
+          "perioada": "01.01.2014 – 01.06.2014",
+          "responsabilitati": [
+            "Îmbunătățește politicile publice în domeniul Economiei și Energiei.",
+            "Asigură relația Departamentului pentru Energie cu cele două Camere ale Parlamentului, pentru susținerea actelor normative.",
+            "Primește, redactează și transmite răspunsurile la întrebările și interpelările adresate de deputați și senatori Departamentului pentru Energie."
+          ],
+          "realizari": [
+            "Consolidarea cadrului legislativ din domeniul Economiei și Energiei prin contribuții strategice.",
+            "Menținerea unei relații eficiente și continue între Departamentul pentru Energie și Parlament."
+          ]
         }
-      ],
-      "rezumatStatus": "din-brief-de-rafinat-din-site"
+      ]
     },
     {
       "id": "parlament",
       "titlu": "Parlament",
-      "rezumat": "Senatul României și activitate de consilier parlamentar.",
+      "rezumat": "2015–2024: Camera Deputaților și Senatul, inclusiv la Comisia de Buget-Finanțe și Comisia de Educație.",
       "joburi": [
         {
-          "id": "senat",
-          "rol": null,
+          "id": "senat-consilier",
+          "rol": "Consilier parlamentar",
           "organizatie": "Senatul României",
-          "perioada": null,
-          "responsabilitati": [],
-          "realizari": []
+          "perioada": "02.07.2024 – 31.07.2024",
+          "responsabilitati": [
+            "Realizează politici publice la nivelul grupului parlamentar.",
+            "Redactează rapoarte privind situația economică și politică la nivel local și european.",
+            "Pregătește activitatea parlamentară, inclusiv lucrările din plen și din cadrul comisiilor de specialitate."
+          ],
+          "realizari": [
+            "Elaborarea de analize politico-economice utile în procesul decizional parlamentar.",
+            "Îmbunătățirea comunicării și colaborării interinstituționale între Parlament și alte entități publice și civice."
+          ]
         },
         {
-          "id": "consilier-parlamentar",
-          "rol": "Consilier parlamentar",
-          "organizatie": null,
-          "perioada": "02–31.07.2024",
-          "responsabilitati": [],
-          "realizari": []
+          "id": "cdep-2019",
+          "rol": "Consilier",
+          "organizatie": "Camera Deputaților",
+          "perioada": "01.08.2019 – 15.03.2021",
+          "responsabilitati": [
+            "Coordonează comisia de Educație.",
+            "Propune soluții pentru îmbunătățirea sistemului educațional.",
+            "Asigură comunicarea între Parlament, Administrația Prezidențială și Guvern."
+          ],
+          "realizari": [
+            "Formularea și promovarea de politici educaționale relevante și eficiente.",
+            "Consolidarea colaborării între instituțiile-cheie ale statului în domeniul educației."
+          ]
+        },
+        {
+          "id": "senat-sef-cabinet",
+          "rol": "Șef de cabinet",
+          "organizatie": "Senatul României",
+          "perioada": "01.01.2017 – 01.07.2019",
+          "responsabilitati": [
+            "Coordonează activitatea Comisiei de Buget-Finanțe a Senatului României, în calitate de Director de cabinet al Președintelui Comisiei.",
+            "Elaborează politici publice la nivelul grupului parlamentar.",
+            "Organizează activitatea parlamentară, inclusiv plenul și lucrările comisiilor."
+          ],
+          "realizari": [
+            "Coordonarea eficientă a activităților Comisiei de Buget-Finanțe, cu impact asupra legislației economice.",
+            "Realizarea de rapoarte complexe care au susținut procesul decizional strategic la nivel parlamentar și guvernamental."
+          ]
+        },
+        {
+          "id": "cdep-2015",
+          "rol": "Consilier",
+          "organizatie": "Camera Deputaților",
+          "perioada": "01.11.2015 – 22.12.2016",
+          "responsabilitati": [
+            "Coordonează activitatea cabinetului.",
+            "Propune și implementează modificări legislative pentru îmbunătățirea politicilor publice.",
+            "Organizează activitatea parlamentară, inclusiv lucrările în plen și în comisii."
+          ],
+          "realizari": [
+            "Contribuție esențială la inițierea și dezvoltarea de politici publice relevante.",
+            "Coordonarea eficientă a activităților cabinetului în sprijinul activității parlamentare."
+          ]
         }
-      ],
-      "rezumatStatus": "din-brief-de-rafinat-din-site"
+      ]
     },
     {
       "id": "local",
       "titlu": "Administrație locală și instituții",
-      "rezumat": "DGASPC Sector 4 și AMEPIP: instituții care lucrează direct cu oamenii.",
+      "rezumat": "Din 2024: DGASPC Sector 4, apoi purtător de cuvânt al AMEPIP.",
       "joburi": [
         {
-          "id": "dgaspc",
-          "rol": null,
-          "organizatie": "DGASPC Sector 4",
-          "perioada": null,
-          "responsabilitati": [],
-          "realizari": []
+          "id": "amepip",
+          "rol": "Consilier, purtător de cuvânt",
+          "organizatie": "Agenția pentru Monitorizarea și Evaluarea Performanțelor Întreprinderilor Publice (AMEPIP)",
+          "perioada": "05.05.2025 – prezent",
+          "responsabilitati": [
+            "Purtătorul de cuvânt al Agenției pentru Monitorizarea și Evaluarea Performanțelor Întreprinderilor Publice (AMEPIP).",
+            "Elaborează și implementează strategii, tactici, documente și acțiuni de comunicare, inclusiv strategia anuală de comunicare și procedurile interne.",
+            "Gestionează comunicarea și relațiile publice: relația cu mass-media, evenimente, campanii și conturile de social media ale AMEPIP."
+          ],
+          "realizari": [
+            "Implementarea cu succes a strategiei anuale de comunicare a AMEPIP.",
+            "Asigurarea unei comunicări eficiente în perioade de criză și contribuția la menținerea reputației instituției."
+          ]
         },
         {
-          "id": "amepip",
-          "rol": null,
-          "organizatie": "AMEPIP",
-          "perioada": null,
-          "responsabilitati": [],
-          "realizari": []
+          "id": "dgaspc-sef",
+          "rol": "Șef Serviciu Logistic",
+          "organizatie": "Direcția Generală de Asistență Socială și Protecția Copilului (DGASPC) Sector 4",
+          "perioada": "01.08.2024 – 04.05.2025",
+          "responsabilitati": [
+            "Coordonează activitatea Serviciului Logistic.",
+            "Asigură gestiunea patrimoniului D.G.A.S.P.C. Sector 4, inclusiv dotările tehnice ale clădirilor și mobilierul.",
+            "Colaborează cu toate centrele aflate în subordinea D.G.A.S.P.C. Sector 4 pentru buna desfășurare a activității acestora."
+          ],
+          "realizari": [
+            "Optimizarea fluxului de achiziții prin centralizarea eficientă a referatelor de necesitate.",
+            "Implementarea de proceduri standardizate pentru gestionarea patrimoniului și logisticii instituției."
+          ]
+        },
+        {
+          "id": "dgaspc-control",
+          "rol": "Consilier, Serviciul Corp Control",
+          "organizatie": "Direcția Generală de Asistență Socială și Protecția Copilului (DGASPC) Sector 4",
+          "perioada": "02.07.2024 – 31.07.2024",
+          "responsabilitati": [
+            "Verifică modul în care sunt acordate și respectate drepturile copilului aflat în dificultate în familia substitutivă.",
+            "Întocmește procese verbale de control, consemnând aspectele constatate și recomandările aferente.",
+            "Verifică activitatea organismelor private acreditate în domeniul protecției copilului/adultului aflat în dificultate, cu care instituția colaborează în sectorul 4."
+          ],
+          "realizari": [
+            "Întocmirea de procese verbale detaliate care au condus la implementarea de măsuri corective eficiente.",
+            "Creșterea calității serviciilor de protecție a copilului prin monitorizarea riguroasă a activității familiilor substitutive și a colaboratorilor privați."
+          ]
         }
-      ],
-      "rezumatStatus": "din-brief-de-rafinat-din-site"
+      ]
     },
     {
       "id": "consultanta",
       "titlu": "Consultanță și proiecte",
-      "rezumat": "Consultanță în proiecte, prin BEST SMART.",
+      "rezumat": "2021–2024: afaceri publice, comunicare guvernamentală și un program de formare profesională.",
       "joburi": [
         {
+          "id": "domino",
+          "rol": "Consultant",
+          "organizatie": "DO MI NO CR CONSULTING SRL",
+          "perioada": "25.10.2022 – 01.07.2024",
+          "responsabilitati": [
+            "Proiectează, coordonează și dezvoltă strategii de comunicare și colaborare cu autoritățile publice locale, centrale, internaționale și cu reprezentanți ai comunității politice și societății civile.",
+            "Monitorizează evoluțiile legislative și de reglementare și oferă echipei și clienților consiliere și expertiză în domeniul politicilor publice.",
+            "Inițiază noi direcții de business, inclusiv servicii de consultanță politică pentru lideri din administrația publică și din comunitatea politică."
+          ],
+          "realizari": [
+            "Implementarea cu succes a unei strategii de comunicare guvernamentală multicanal, cu impact regional și internațional.",
+            "Consultanță de specialitate oferită unor actori politici și administrativi, cu influență directă în formularea de politici publice."
+          ]
+        },
+        {
           "id": "best-smart",
-          "rol": null,
-          "organizatie": "BEST SMART",
-          "perioada": null,
-          "responsabilitati": [],
-          "realizari": []
+          "rol": "Coordonator",
+          "organizatie": "BEST SMART DIGITAL SRL",
+          "perioada": "18.10.2022 – 01.03.2023",
+          "responsabilitati": [
+            "Implementează cu succes activitățile proiectului și urmărește atingerea rezultatelor planificate.",
+            "Supervizează programul de pregătire și conduce echipa de implementare.",
+            "Elaborează calendarul programelor de formare profesională."
+          ],
+          "realizari": [
+            "Crearea și coordonarea unui program de formare profesională adaptat nevoilor identificate.",
+            "Implementarea cu succes a etapelor proiectului, cu respectarea termenelor și a indicatorilor de rezultat."
+          ]
+        },
+        {
+          "id": "pas",
+          "rol": "Senior Consultant",
+          "organizatie": "PUBLIC AFFAIRS SOLUTIONS SRL",
+          "perioada": "01.04.2021 – 15.08.2022",
+          "responsabilitati": [
+            "Monitorizează dezbaterile din Parlamentul Național și European, documentele Guvernului, ale Comisiei Europene, ale ONG-urilor și ale altor organisme relevante.",
+            "Stabilește și menține o comunicare bidirecțională eficientă cu oficialii guvernamentali.",
+            "Cercetează, prognozează și evaluează impactul politicilor publice asupra organizației sau sectorului vizat."
+          ],
+          "realizari": [
+            "Redactarea de rapoarte strategice cu valoare adăugată pentru procesul decizional intern al organizației.",
+            "Susținerea procesului de reformare a politicilor publice prin propuneri fundamentate și intervenții punctuale."
+          ]
         }
-      ],
-      "rezumatStatus": "din-brief-de-rafinat-din-site"
+      ]
     }
   ]
 }

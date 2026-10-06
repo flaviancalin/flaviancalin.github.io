@@ -1,9 +1,40 @@
 {
-  "_nota": "Povestea în 3-4 paragrafe se scrie DOAR din textul pagini 'Despre mine' scrapate. Până atunci, paragraful 1 folosește exclusiv fapte confirmate în brief.",
+  "_nota": "Povestea, din textul paginilor 'Despre mine' și 'Acasă' de pe catalinrenghea.ro, scurtată și trecută la persoana I. Fără afirmații noi.",
   "paragrafe": [
-    { "text": "Cătălin Renghea a fost consilier pentru trei prim-miniștri și a lucrat în Guvern, în Parlament și în instituții ale Sectorului 4, inclusiv la DGASPC Sector 4.", "status": "din-brief" },
-    { "text": null, "status": "de-completat-din-site" },
-    { "text": null, "status": "de-completat-din-site" }
+    {
+      "text": "Sunt Mihai-Cătălin Renghea. Am aproximativ 10 ani de experiență în politică și relații guvernamentale și am fost consilier pentru trei prim-miniștri ai României. Astăzi sunt purtătorul de cuvânt al Agenției pentru Monitorizarea și Evaluarea Performanțelor Întreprinderilor Publice (AMEPIP).",
+      "status": "din-site"
+    },
+    {
+      "text": "Am lucrat îndeaproape cu lideri politici de rang înalt, autorități publice și organizații internaționale, dezvoltând relații de colaborare și promovând inițiative menite să aducă beneficii comunităților pe care le servesc.",
+      "status": "din-site"
+    },
+    {
+      "text": "Am coordonat proiecte majore de investiții, printre care investiția de 2 miliarde de euro a grupului Nokian în județul Bihor și investiția de 200 de milioane de euro a grupului Clariant în Craiova.",
+      "status": "din-site"
+    },
+    {
+      "text": "În Sectorul 4 am lucrat la Direcția Generală de Asistență Socială și Protecția Copilului: în Serviciul Corp Control, apoi ca șef al Serviciului Logistic.",
+      "status": "din-site"
+    }
   ],
-  "cvPdf": null
+  "faq": [
+    {
+      "q": "Ce experiență ai în atragerea de investiții străine?",
+      "a": "Am coordonat și implementat investiția de 2 miliarde de euro a grupului Nokian în județul Bihor și investiția grupului Clariant de 200 de milioane de euro în Craiova."
+    },
+    {
+      "q": "Cum ai contribuit la proiectele europene de digitalizare a energiei?",
+      "a": "Am coordonat cel mai mare proiect european de digitalizare a energiei, colaborând cu cea mai mare asociație din domeniul energiei din România și selectând formatori pentru 350 de companii mici și mijlocii din România."
+    },
+    {
+      "q": "Ce rol ai avut în îmbunătățirea politicilor publice?",
+      "a": "Am contribuit la modificarea și adoptarea propunerilor legislative în Parlamentul României, am reprezentat interesele clienților în Parlamentul European privind Directiva „Fit for 55” și am avut un dialog constant cu Prim-Ministrul României și Cancelaria Prim-Ministrului."
+    },
+    {
+      "q": "Ce studii ai?",
+      "a": "Doctorat în Științe Politice la Universitatea din București, master în Relații Internaționale și Integrare Europeană și licență în Comunicare și Relații Publice, ambele la SNSPA."
+    }
+  ],
+  "cvPdf": "/docs/mihai-catalin-renghea-cv-ro-1.pdf"
 }

@@ -11,10 +11,23 @@
     "email": "office@catalinrenghea.ro"
   },
   "social": [
-    { "nume": "Facebook", "handle": "Catalin.Renghea", "url": "https://www.facebook.com/Catalin.Renghea" },
-    { "nume": "TikTok", "handle": "@catalinrenghea.official", "url": "https://www.tiktok.com/@catalinrenghea.official" },
-    { "nume": "LinkedIn", "handle": "cătălin-renghea", "url": "https://www.linkedin.com/in/c%C4%83t%C4%83lin-renghea/" }
+    {
+      "nume": "Facebook",
+      "handle": "Catalin.Renghea",
+      "url": "https://www.facebook.com/Catalin.Renghea"
+    },
+    {
+      "nume": "TikTok",
+      "handle": "@catalinrenghea.official",
+      "url": "https://www.tiktok.com/@catalinrenghea.official"
+    },
+    {
+      "nume": "LinkedIn",
+      "handle": "cătălin-renghea",
+      "url": "https://www.linkedin.com/in/c%C4%83t%C4%83lin-renghea/"
+    }
   ],
   "whatsappCanal": null,
-  "previewUrl": "https://catalinrenghea.ro"
+  "previewUrl": "https://catalinrenghea.ro",
+  "numeComplet": "Mihai-Cătălin Renghea"
 }

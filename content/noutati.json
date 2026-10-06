@@ -36,9 +36,11 @@
     }
   ],
   "kitPresa": {
-    "bioScurta": null,
-    "portret": null,
-    "logo": null,
+    "bioScurta": "Mihai-Cătălin Renghea are aproximativ 10 ani de experiență în politică și relații guvernamentale. A fost consilier pentru trei prim-miniștri ai României și a lucrat în Guvernul României, la Ministerul Economiei, în Camera Deputaților și în Senat, unde a fost șef de cabinet la Comisia de Buget-Finanțe. În Sectorul 4 a lucrat la DGASPC, iar din 2025 este purtătorul de cuvânt al AMEPIP. Este doctor în Științe Politice al Universității din București.",
+    "bioStatus": "compusă din textul site-ului, de aprobat",
+    "portret": "/images/alx4486-transformed.jpeg",
+    "logo": "/images/1.png",
+    "logoSvg": "/brand/monogram.svg",
     "contactPresa": "office@catalinrenghea.ro"
   }
 }

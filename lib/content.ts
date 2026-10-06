@@ -7,6 +7,7 @@ import program from "@/content/program.json";
 import noutati from "@/content/noutati.json";
 import cartiere from "@/content/cartiere.json";
 import sesizari from "@/content/sesizari.json";
+import cv from "@/content/cv.json";
 
 // Conținutul stă în /content (JSON/Markdown), separat de cod, ca să fie portat ușor în Webflow CMS.
 export const SITE = site;
@@ -20,6 +21,7 @@ export const KIT_PRESA = noutati.kitPresa;
 export const CARTIERE = cartiere.cartiere;
 export const CATEGORII = sesizari.categorii;
 export const STATUSURI = sesizari.statusuri;
+export const CV = cv.joburi;
 
 export type Tema = (typeof TEME)[number];
 export type Etapa = (typeof ETAPE)[number];
