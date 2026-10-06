@@ -39,8 +39,25 @@ function cleanHtml(html) {
   return $.html();
 }
 
+// Teme cu page builder (BeTheme/Muffin, Elementor) țin conținutul în afara API-ului.
+// Când API-ul dă sub 40 de cuvinte, luăm conținutul din HTML-ul randat al paginii.
+const htmlByUrl = new Map((manifest.pages ?? []).map((pg) => [pg.url.replace(/\/$/, ""), path.join(SRC, pg.file)]));
+function htmlContent(url) {
+  const f = htmlByUrl.get(url?.replace(/\/$/, ""));
+  if (!f || !existsSync(f)) return null;
+  const $ = cheerio.load(readFileSync(f, "utf8"));
+  const main = $("#Content").length ? $("#Content") : $("main").length ? $("main") : $(".entry-content, body").first();
+  main.find("script, style, noscript, nav, form, .mfn-header-template, .mfn-footer-template").remove();
+  return main.html();
+}
+const words = (html) => cheerio.load(html ?? "").text().split(/\s+/).filter(Boolean).length;
+
 if (pages.length) {
   for (const p of pages) {
+    if (words(p.content?.rendered) < 40) {
+      const h = htmlContent(p.link);
+      if (h) p.content = { rendered: h, _dinHtml: true };
+    }
     const slug = p.slug || slugFromUrl(p.link);
     const title = cheerio.load(p.title?.rendered ?? "").text();
     const md = `---\ntitlu: ${JSON.stringify(title)}\nsursa: ${p.link}\nmodificat: ${p.modified ?? ""}\ntip: ${p._post ? "articol" : "pagina"}\n---\n\n# ${title}\n\n${td.turndown(cleanHtml(p.content?.rendered ?? ""))}\n`;
@@ -50,8 +67,10 @@ if (pages.length) {
   }
 }
 // Completează din HTML paginile pe care API-ul nu le-a dat (sau toate, dacă API-ul a fost blocat).
+const apiLinks = new Set(pages.map((p) => p.link?.replace(/\/$/, "")));
 for (const pg of manifest.pages ?? []) {
   const slug = slugFromUrl(pg.url);
+  if (apiLinks.has(pg.url.replace(/\/$/, "")) || /^author__/.test(slug)) continue;
   if (existsSync(path.join(OUT_RAW, `${slug}.md`))) continue;
   const file = path.join(SRC, pg.file);
   if (!existsSync(file)) continue;
@@ -69,7 +88,12 @@ function walk(dir) {
   if (!existsSync(dir)) return [];
   return readdirSync(dir).flatMap((f) => { const p = path.join(dir, f); return statSync(p).isDirectory() ? walk(p) : [p]; });
 }
-const imgFiles = walk(path.join(SRC, "files")).filter((f) => /\.(jpe?g|png|webp|gif|avif|svg)$/i.test(f));
+// Doar fișierele urcate de client (nu iconițele/fundalurile temei, nici CSS-ul generat de temă).
+const imgFiles = walk(path.join(SRC, "files/wp-content/uploads"))
+  .filter((f) => /\.(jpe?g|png|webp|gif|avif|svg)$/i.test(f) && !/\/uploads\/(betheme|elementor)\//.test(f));
+const pdfFiles = walk(path.join(SRC, "files/wp-content/uploads")).filter((f) => /\.pdf$/i.test(f));
+mkdirSync(path.join(ROOT, "public/docs"), { recursive: true });
+for (const f of pdfFiles) copyFileSync(f, path.join(ROOT, "public/docs", path.basename(f).toLowerCase()));
 const assetBy = new Map((manifest.assets ?? []).map((a) => [a.file, a]));
 const mediaApi = readJson("api/media.json", []);
 const altByUrl = new Map(mediaApi.map((m) => [m.source_url, m.alt_text || cheerio.load(m.title?.rendered ?? "").text()]));

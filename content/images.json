@@ -1,0 +1,1556 @@
+{
+  "_nota": "Inventar generat de tools/import/import.mjs, completat manual: altPropus, demoTema (imagini demo ale temei BeTheme), folosita (unde apare în preview). Imaginile demo ale temei nu sunt copiate în public/images (nu aparțin clientului).",
+  "imagini": [
+    {
+      "cale": "/images/output_image.jpeg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/output_image.jpeg",
+      "latime": 4180,
+      "inaltime": 2152,
+      "kb": 1397,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:112"
+      ],
+      "duplicate": [],
+      "sha256": "bbf1cc7f57ef3d13b70d167c39fc1b0f4a02b7fb6fc446dc9a8c7caaf26f2210",
+      "altPropus": "Cătălin Renghea pe un fundal digital albastru"
+    },
+    {
+      "cale": "/images/whatsapp-image-2026-02-16-at-09.16.12.jpeg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-16-at-09.16.12.jpeg",
+      "latime": 2048,
+      "inaltime": 2048,
+      "kb": 349,
+      "lowRes": false,
+      "whatsapp": true,
+      "pagini": [
+        "media:187",
+        "https://catalinrenghea.ro/despre-mine/"
+      ],
+      "duplicate": [],
+      "sha256": "6255a167261c78789a6a6aff5a3d89dba879772299ef8cd5ad8d1cfe49997bb0",
+      "altPropus": "Cătălin Renghea la biroul său, cu drapelul României în fundal",
+      "folosita": "despre"
+    },
+    {
+      "cale": "/images/muncabg.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/muncabg.png",
+      "latime": 2560,
+      "inaltime": 1564,
+      "kb": 3322,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:170",
+        "https://catalinrenghea.ro/"
+      ],
+      "duplicate": [],
+      "sha256": "f501c90327ab99fe951c93e3d5d0e1a4fe11849b3a563b5a8fd28ac2c6b5a6c3",
+      "altPropus": "Fundal albastru estompat (decor din site-ul vechi)"
+    },
+    {
+      "cale": "/images/factory-4.0-catalin-renghea-ezgif.com-webp-to-jpg-converter-removebg-preview-transformed.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/factory-4.0-catalin-renghea-ezgif.com-webp-to-jpg-converter-removebg-preview-transformed.png",
+      "latime": 2000,
+      "inaltime": 2000,
+      "kb": 2690,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:115"
+      ],
+      "duplicate": [],
+      "sha256": "e101e4d8184d64ce47dfc9b9986a3dae91f913ef07bbcc3fbd1d9ebe0ca9f78d",
+      "altPropus": "Portret Cătălin Renghea pe fundal negru"
+    },
+    {
+      "cale": "/images/2.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/2.png",
+      "latime": 2000,
+      "inaltime": 2000,
+      "kb": 88,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:154",
+        "media:155 post:154"
+      ],
+      "duplicate": [
+        "https://catalinrenghea.ro/wp-content/uploads/2024/06/cropped-2.png"
+      ],
+      "sha256": "46f938202cf9557a14ad3e4e8eed25b1deb23dd208be5bd300c181c22540cbf0",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)",
+      "folosita": "logo"
+    },
+    {
+      "cale": "/images/1.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/1.png",
+      "latime": 2000,
+      "inaltime": 2000,
+      "kb": 81,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:153"
+      ],
+      "duplicate": [],
+      "sha256": "1f1b1888409ac6007f559aeaa0f598be6d0b60ca1faef671aa7ed9c53c94fdb5",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)",
+      "folosita": "logo"
+    },
+    {
+      "cale": "/images/2-1.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/2-1.png",
+      "latime": 2000,
+      "inaltime": 2000,
+      "kb": 73,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:164"
+      ],
+      "duplicate": [],
+      "sha256": "5365fffdea7b4ea8bdc47fb6815fcf9c64409c3031e9a67d86c8fbf5884a8732",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/alx4486-transformed.jpeg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/ALX4486-transformed.jpeg",
+      "latime": 1740,
+      "inaltime": 1902,
+      "kb": 155,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:147",
+        "https://catalinrenghea.ro/despre-mine/",
+        "media:125"
+      ],
+      "duplicate": [
+        "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4486.jpg"
+      ],
+      "sha256": "326e61de9ad9d61263cfc1c68d06b08bc5bb8b31c452ff5c7c10a7c55d1ac5b3",
+      "altPropus": "Portret oficial al lui Cătălin Renghea, cu brațele încrucișate, pe fundal albastru",
+      "folosita": "presa"
+    },
+    {
+      "cale": "/images/whatsapp-image-2025-09-18-at-13.29.36_7ba4c000.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-18-at-13.29.36_7ba4c000.jpg",
+      "latime": 1366,
+      "inaltime": 2048,
+      "kb": 327,
+      "lowRes": false,
+      "whatsapp": true,
+      "pagini": [
+        "media:183",
+        "https://catalinrenghea.ro/despre-mine/"
+      ],
+      "duplicate": [],
+      "sha256": "9731f98e6afa61f03efd784d60ea4cb7d91219c38b6512457f9f274a33900be3",
+      "altPropus": "Cătălin Renghea pe o alee, cu brațele deschise, primitor",
+      "folosita": "implica"
+    },
+    {
+      "cale": "/images/whatsapp-image-2025-09-17-at-10.58.42_afcf9eb6.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-17-at-10.58.42_afcf9eb6.jpg",
+      "latime": 1366,
+      "inaltime": 2048,
+      "kb": 246,
+      "lowRes": false,
+      "whatsapp": true,
+      "pagini": [
+        "media:180",
+        "https://catalinrenghea.ro/despre-mine/"
+      ],
+      "duplicate": [],
+      "sha256": "844f5d62bba295dd4316777d199480ea536015a8cc6110022bedd6d2a8d7c039",
+      "altPropus": "Cătălin Renghea vorbind pe scena unei conferințe"
+    },
+    {
+      "cale": "/images/whatsapp-image-2026-02-16-at-09.16.11.jpeg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-16-at-09.16.11.jpeg",
+      "latime": 1366,
+      "inaltime": 2048,
+      "kb": 204,
+      "lowRes": false,
+      "whatsapp": true,
+      "pagini": [
+        "media:186",
+        "https://catalinrenghea.ro/despre-mine/",
+        "media:182"
+      ],
+      "duplicate": [
+        "https://catalinrenghea.ro/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-17-at-10.58.42_15dffc1d.jpg"
+      ],
+      "sha256": "76babb0e8fde4ecc10a41ae2e30450dcb5b867264ce575258d2c50b57ddec410",
+      "altPropus": "Cătălin Renghea, zâmbind, în costum închis, pe o alee cu copaci",
+      "folosita": "hero"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-section-bg7.webp",
+      "latime": 2143,
+      "inaltime": 949,
+      "kb": 33,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:100"
+      ],
+      "duplicate": [],
+      "sha256": "421ae4d2f51b9d4f20a3a2b11371d988f14856915e3e459ce207aa3088bb3df6",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-section-bg7.webp"
+    },
+    {
+      "cale": "/images/2-2.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/2-2.png",
+      "latime": 2000,
+      "inaltime": 978,
+      "kb": 57,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:165"
+      ],
+      "duplicate": [],
+      "sha256": "a9ac745dcb41a70047bb272e32452a1f02f44d2f5f05d786502a678c47041354",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-section-bg3.webp",
+      "latime": 1920,
+      "inaltime": 956,
+      "kb": 80,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:106"
+      ],
+      "duplicate": [],
+      "sha256": "5535e59a37cfa1f533ded208ab2edd6a2e29d188fc8337febf1f40b4c6bcb078",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-section-bg3.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-section-bg1.webp",
+      "latime": 1920,
+      "inaltime": 947,
+      "kb": 84,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:24"
+      ],
+      "duplicate": [],
+      "sha256": "d1d614a4f1292482ddf128e4b92e7017fd8f22f70067b40b5940022eafc70665",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-section-bg1.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-section-bg5.webp",
+      "latime": 1920,
+      "inaltime": 921,
+      "kb": 73,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:77",
+        "https://catalinrenghea.ro/program/"
+      ],
+      "duplicate": [],
+      "sha256": "ba6475fc55c9b5f330fb0f441f40567d6459b6b86423a79c2d4c800d74f5c858",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-section-bg5.webp"
+    },
+    {
+      "cale": "/images/whatsapp-image-2025-09-17-at-10.50.37_9542c170.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-17-at-10.50.37_9542c170.jpg",
+      "latime": 1080,
+      "inaltime": 1620,
+      "kb": 64,
+      "lowRes": true,
+      "whatsapp": true,
+      "pagini": [
+        "media:177",
+        "https://catalinrenghea.ro/",
+        "https://catalinrenghea.ro/despre-mine/",
+        "https://catalinrenghea.ro/program/"
+      ],
+      "duplicate": [],
+      "sha256": "562161f19edc1a96d728a427c22104aa41118b8d080bb06f55fe432ad0f4b4ef",
+      "altPropus": "Cătălin Renghea la masa unei ședințe, cu microfon și documente în față",
+      "folosita": "parcurs"
+    },
+    {
+      "cale": "/images/whatsapp-image-2025-09-17-at-10.58.41_77f8f6e1.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-17-at-10.58.41_77f8f6e1.jpg",
+      "latime": 1065,
+      "inaltime": 1600,
+      "kb": 172,
+      "lowRes": true,
+      "whatsapp": true,
+      "pagini": [
+        "media:179",
+        "https://catalinrenghea.ro/despre-mine/"
+      ],
+      "duplicate": [],
+      "sha256": "6c6fe8f9b738fd245986db67761d1944504965469e74faa3897817fd2f19281e",
+      "altPropus": "Cătălin Renghea la un eveniment, în fața unui panou cu sponsori"
+    },
+    {
+      "cale": "/images/whatsapp-image-2025-09-18-at-13.29.37_6ca483b9.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-18-at-13.29.37_6ca483b9.jpg",
+      "latime": 1064,
+      "inaltime": 1600,
+      "kb": 175,
+      "lowRes": true,
+      "whatsapp": true,
+      "pagini": [
+        "media:184",
+        "https://catalinrenghea.ro/despre-mine/"
+      ],
+      "duplicate": [],
+      "sha256": "5946aa114a560c659e04ae5314a61d87a662edece7d4596308aff35ff103be34",
+      "altPropus": "Cătălin Renghea zâmbind, în costum albastru, la un eveniment"
+    },
+    {
+      "cale": "/images/bghome.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/bghome.jpg",
+      "latime": 1556,
+      "inaltime": 951,
+      "kb": 71,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:161",
+        "https://catalinrenghea.ro/",
+        "https://catalinrenghea.ro/despre-mine/"
+      ],
+      "duplicate": [],
+      "sha256": "faa145bca27add5c8d5c059831dc5e1b2bf307999180d00e32624d85052c72d9",
+      "altPropus": "bghome"
+    },
+    {
+      "cale": "/images/alx4498.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4498.jpg",
+      "latime": 1503,
+      "inaltime": 951,
+      "kb": 109,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:128"
+      ],
+      "duplicate": [],
+      "sha256": "800ca11255dc27d18c79c1228309532255d8809cd9c8c790edfd43b953d5e23d",
+      "altPropus": "Cătălin Renghea, portret de studio pe fundal albastru"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-section-bg2.webp",
+      "latime": 1720,
+      "inaltime": 811,
+      "kb": 67,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:55"
+      ],
+      "duplicate": [],
+      "sha256": "3c5f4954f0a196956fc9ca63b9acfeb24f5926d678f04a7396cb1888ee990426",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-section-bg2.webp"
+    },
+    {
+      "cale": "/images/alx4482.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4482.jpg",
+      "latime": 1401,
+      "inaltime": 951,
+      "kb": 83,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:122"
+      ],
+      "duplicate": [],
+      "sha256": "4857c58db0fad32c0548388c6e972b8ba3ac02e2466b7afe9cda2f66bfe2908c",
+      "altPropus": "Cătălin Renghea, portret de studio pe fundal albastru"
+    },
+    {
+      "cale": "/images/alx4488.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4488.jpg",
+      "latime": 1359,
+      "inaltime": 951,
+      "kb": 93,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:131",
+        "https://catalinrenghea.ro/contact/"
+      ],
+      "duplicate": [],
+      "sha256": "c0fd4f05b0c46435e05eba80401804c0e334cc0d8dc4b21b5e81c739ed4d08fe",
+      "altPropus": "Cătălin Renghea, portret de studio pe fundal albastru"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-section-bg4.webp",
+      "latime": 1920,
+      "inaltime": 640,
+      "kb": 49,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:71"
+      ],
+      "duplicate": [],
+      "sha256": "d3494213ca088940c958885067c851c14ddbc128972a7e7a573418d3103bed0a",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-section-bg4.webp"
+    },
+    {
+      "cale": "/images/logo.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/logo.jpg",
+      "latime": 1100,
+      "inaltime": 1111,
+      "kb": 103,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:109"
+      ],
+      "duplicate": [],
+      "sha256": "c3766e08662a133df11aa04097293d8bc61284a19812fd187177f53b7151e281",
+      "altPropus": "Emblemă rotundă Cătălin Renghea (versiune veche)"
+    },
+    {
+      "cale": "/images/alx4498-modified-e1717396433997.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/ALX4498-Modified-e1717396433997.jpg",
+      "latime": 1252,
+      "inaltime": 951,
+      "kb": 83,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:148"
+      ],
+      "duplicate": [],
+      "sha256": "beabd64998c633db57f2eb645130d327853df901042654b0cb18e77a3a2c1ad1",
+      "altPropus": "Cătălin Renghea, portret de studio pe fundal albastru"
+    },
+    {
+      "cale": "/images/alx4496.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4496.jpg",
+      "latime": 1245,
+      "inaltime": 951,
+      "kb": 91,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "https://catalinrenghea.ro/news/"
+      ],
+      "duplicate": [],
+      "sha256": "1fbff3624045499c2b817593a05f8d8acb4828a8850ddc7126584d22a06e09d0",
+      "altPropus": "Cătălin Renghea, portret de studio pe fundal albastru"
+    },
+    {
+      "cale": "/images/logo.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/logo.png",
+      "latime": 1071,
+      "inaltime": 1094,
+      "kb": 912,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:118",
+        "media:119"
+      ],
+      "duplicate": [
+        "https://catalinrenghea.ro/wp-content/uploads/2024/05/logo-ezgif.com-resize.png"
+      ],
+      "sha256": "4612e5151fa1c8bf5d49a6bb25e349673b6dec8a9febefb912b5fd26f091c2f2",
+      "altPropus": "Emblemă rotundă Cătălin Renghea (versiune veche)"
+    },
+    {
+      "cale": "/images/logofinalfooter-e1718117529913.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/logofinalfooter-e1718117529913.jpg",
+      "latime": 1123,
+      "inaltime": 1024,
+      "kb": 42,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:173",
+        "https://catalinrenghea.ro/",
+        "https://catalinrenghea.ro/despre-mine/",
+        "https://catalinrenghea.ro/contact/",
+        "https://catalinrenghea.ro/termeni-si-conditii/",
+        "https://catalinrenghea.ro/politica-de-confidentialitate/",
+        "https://catalinrenghea.ro/politica-de-cookies/",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/program/",
+        "https://catalinrenghea.ro/2023/08/02/curae-libero-aenean-auctor-sodales/",
+        "https://catalinrenghea.ro/2023/08/02/natoque-pharetra-semper-felis-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/metus-tortor-dui-habitant-lorem-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/dictumst-diam-scelerisque-quam-nulla/",
+        "https://catalinrenghea.ro/2023/08/02/nec-potenti-eu-tincidunt-eros-habitant/",
+        "https://catalinrenghea.ro/2023/07/31/curabitur-dolor-aliquet-sodales-pharetra-finibus/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "feab684f05fb7e81f9aec45bf5788a0108d3a1d76178baa7fb28f38c16665371",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/alx4487-e1717754197983.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4487-e1717754197983.jpg",
+      "latime": 1198,
+      "inaltime": 951,
+      "kb": 71,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:130",
+        "https://catalinrenghea.ro/despre-mine/",
+        "https://catalinrenghea.ro/contact/"
+      ],
+      "duplicate": [],
+      "sha256": "58f6a8edeb082d7c3cefbea36e64c07f1184f99fafbb752e7bb9ab0412bad233",
+      "altPropus": "Cătălin Renghea, portret de studio pe fundal albastru"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-post-pic5.webp",
+      "latime": 1200,
+      "inaltime": 925,
+      "kb": 210,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:53",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/2023/08/02/curae-libero-aenean-auctor-sodales/",
+        "https://catalinrenghea.ro/2023/08/02/natoque-pharetra-semper-felis-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/metus-tortor-dui-habitant-lorem-ultrices/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "8a5d935813f96d09e5b620ac0927de1575e629f6a55099bf352404928087f08f",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-post-pic5.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-post-pic1.webp",
+      "latime": 1200,
+      "inaltime": 925,
+      "kb": 148,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:49",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/2023/08/02/curae-libero-aenean-auctor-sodales/",
+        "https://catalinrenghea.ro/2023/08/02/nec-potenti-eu-tincidunt-eros-habitant/",
+        "https://catalinrenghea.ro/2023/07/31/curabitur-dolor-aliquet-sodales-pharetra-finibus/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "42d31fffd0c17a33fb4d60cf9ceb554a351c5111dbd3dd828eb576da282f91ee",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-post-pic1.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-post-pic6.webp",
+      "latime": 1200,
+      "inaltime": 925,
+      "kb": 133,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:54",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/2023/08/02/curae-libero-aenean-auctor-sodales/",
+        "https://catalinrenghea.ro/2023/08/02/natoque-pharetra-semper-felis-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/dictumst-diam-scelerisque-quam-nulla/",
+        "https://catalinrenghea.ro/2023/07/31/curabitur-dolor-aliquet-sodales-pharetra-finibus/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "bde3151729a6b96dd51278000d43b1a1961d6c352b3c444997b222b8e2fe3bba",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-post-pic6.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-post-pic2.webp",
+      "latime": 1200,
+      "inaltime": 925,
+      "kb": 78,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:50",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/2023/08/02/dictumst-diam-scelerisque-quam-nulla/",
+        "https://catalinrenghea.ro/2023/08/02/nec-potenti-eu-tincidunt-eros-habitant/",
+        "https://catalinrenghea.ro/2023/07/31/curabitur-dolor-aliquet-sodales-pharetra-finibus/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "9594a673281987b365ceba5c4b9d13eae4e58526381c193ac97075f9a2f3cc1c",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-post-pic2.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-post-pic3.webp",
+      "latime": 1200,
+      "inaltime": 925,
+      "kb": 75,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:51",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/2023/08/02/natoque-pharetra-semper-felis-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/metus-tortor-dui-habitant-lorem-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/dictumst-diam-scelerisque-quam-nulla/",
+        "https://catalinrenghea.ro/2023/08/02/nec-potenti-eu-tincidunt-eros-habitant/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "59b9fd133789f3a01a6aebb87649586dad2b285ba42cfdfaf691b3cd1373bc3b",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-post-pic3.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-post-pic4.webp",
+      "latime": 1200,
+      "inaltime": 925,
+      "kb": 47,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:52",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/2023/08/02/natoque-pharetra-semper-felis-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/metus-tortor-dui-habitant-lorem-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/dictumst-diam-scelerisque-quam-nulla/",
+        "https://catalinrenghea.ro/2023/08/02/nec-potenti-eu-tincidunt-eros-habitant/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "70f28d6a38a6c9062be9b8648e4c46f4acc037a06d5c081f013d7242dd75d8dc",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-post-pic4.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-section-bg6.webp",
+      "latime": 1920,
+      "inaltime": 500,
+      "kb": 18,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:82"
+      ],
+      "duplicate": [],
+      "sha256": "7fb976021368d29134a7cfd5e7c867cbd6f1b22f2240fcdd2ec0a6d2267c1818",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-section-bg6.webp"
+    },
+    {
+      "cale": "/images/2-3.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/2-3.png",
+      "latime": 935,
+      "inaltime": 978,
+      "kb": 51,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:166"
+      ],
+      "duplicate": [],
+      "sha256": "90c5debbc44c16c7e340e6485cab819e659ee6cd73d3bc8bab5730ac3320aa1b",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/alx4491-e1717489270588.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4491-e1717489270588.jpg",
+      "latime": 1386,
+      "inaltime": 582,
+      "kb": 48,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:132",
+        "media:162"
+      ],
+      "duplicate": [
+        "https://catalinrenghea.ro/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-04-at-11.27.42_7495c2da.jpg"
+      ],
+      "sha256": "496701caa1e308bd419e90716b790863961dab0e7c78ac452a23c33c9892cd7d",
+      "altPropus": "Cătălin Renghea, portret de studio pe fundal albastru"
+    },
+    {
+      "cale": "/images/whatsapp-image-2025-09-17-at-10.58.42_73b1eb39.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-17-at-10.58.42_73b1eb39.jpg",
+      "latime": 786,
+      "inaltime": 1022,
+      "kb": 68,
+      "lowRes": true,
+      "whatsapp": true,
+      "pagini": [
+        "media:181",
+        "https://catalinrenghea.ro/despre-mine/"
+      ],
+      "duplicate": [],
+      "sha256": "266b246d598d1b7fc8a416cd53f75a5e1bce0cf3b1658842b66b537901ad6346",
+      "altPropus": "Cătălin Renghea la un eveniment, lângă un logo auriu"
+    },
+    {
+      "cale": "/images/aboutme.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/aboutme.jpg",
+      "latime": 768,
+      "inaltime": 960,
+      "kb": 55,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:117",
+        "https://catalinrenghea.ro/despre-mine/"
+      ],
+      "duplicate": [],
+      "sha256": "2773bdf97c3bcd66965d3e8189ddba9d90bbf4877860243fb375b7b7d43d741f",
+      "altPropus": "Cătălin Renghea la fereastră, cu vedere spre o parcare"
+    },
+    {
+      "cale": "/images/alx4501-e1717489291952.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4501-e1717489291952.jpg",
+      "latime": 1143,
+      "inaltime": 640,
+      "kb": 49,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:129"
+      ],
+      "duplicate": [],
+      "sha256": "98074f179260ca9ef9a9048827ac2ad83c0fefecc39ab58794431184f6adb072",
+      "altPropus": "_ALX4501"
+    },
+    {
+      "cale": "/images/alx4496-e1717489250887.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4496-e1717489250887.jpg",
+      "latime": 907,
+      "inaltime": 646,
+      "kb": 43,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:121"
+      ],
+      "duplicate": [],
+      "sha256": "2b4105cc05e5093ad16f64fa9b05dc76797e6d577d11484e7bf440b70360298c",
+      "altPropus": "Cătălin Renghea, portret de studio pe fundal albastru"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-contact-pic1.webp",
+      "latime": 665,
+      "inaltime": 846,
+      "kb": 82,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:97"
+      ],
+      "duplicate": [],
+      "sha256": "765101bff738a35c87671a5d91730e4efaf34f892318f7df66022e6628b2e9d4",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-contact-pic1.webp"
+    },
+    {
+      "cale": "/images/alx4486-removebg-preview-1.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4486-removebg-preview-1.png",
+      "latime": 717,
+      "inaltime": 783,
+      "kb": 457,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:127",
+        "https://catalinrenghea.ro/"
+      ],
+      "duplicate": [],
+      "sha256": "eda9ba8d08234d1415f10ac12785204487564b21f8f764cbe884660697584e49",
+      "altPropus": "Cătălin Renghea, portret de studio pe fundal albastru"
+    },
+    {
+      "cale": "/images/alx4493-e1717489229421.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ALX4493-e1717489229421.jpg",
+      "latime": 930,
+      "inaltime": 554,
+      "kb": 37,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:123"
+      ],
+      "duplicate": [],
+      "sha256": "b119bf8a7b4d0cd528b4f1052f94cc19009712ffdbcb5098bce973993c0fa170",
+      "altPropus": "Cătălin Renghea, portret de studio pe fundal albastru"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-about-pic1.webp",
+      "latime": 614,
+      "inaltime": 584,
+      "kb": 31,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:64"
+      ],
+      "duplicate": [],
+      "sha256": "f3a2280285dbaac152e54280951d0c752935e7847358d529e36506d9ff1f194e",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-about-pic1.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-program-pic5.webp",
+      "latime": 593,
+      "inaltime": 584,
+      "kb": 19,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:25"
+      ],
+      "duplicate": [],
+      "sha256": "3a445e7e54208370db08dd252d11dc1be6dc7a891f2bb22829e6a9bb473cbb3c",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-program-pic5.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-home-pic3.webp",
+      "latime": 536,
+      "inaltime": 643,
+      "kb": 33,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:56"
+      ],
+      "duplicate": [],
+      "sha256": "1533d114480c84095bdca3743fe899bedb9f7112a1ff31263bd65aea4ad22d14",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-home-pic3.webp"
+    },
+    {
+      "cale": "/images/cropped-logofinalfooter-e1718117529913.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/cropped-logofinalfooter-e1718117529913.jpg",
+      "latime": 512,
+      "inaltime": 512,
+      "kb": 15,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:174 post:173",
+        "https://catalinrenghea.ro/",
+        "https://catalinrenghea.ro/despre-mine/",
+        "https://catalinrenghea.ro/contact/",
+        "https://catalinrenghea.ro/termeni-si-conditii/",
+        "https://catalinrenghea.ro/politica-de-confidentialitate/",
+        "https://catalinrenghea.ro/politica-de-cookies/",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/program/",
+        "https://catalinrenghea.ro/2023/08/02/curae-libero-aenean-auctor-sodales/",
+        "https://catalinrenghea.ro/2023/08/02/natoque-pharetra-semper-felis-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/metus-tortor-dui-habitant-lorem-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/dictumst-diam-scelerisque-quam-nulla/",
+        "https://catalinrenghea.ro/2023/08/02/nec-potenti-eu-tincidunt-eros-habitant/",
+        "https://catalinrenghea.ro/2023/07/31/curabitur-dolor-aliquet-sodales-pharetra-finibus/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "377992fdcfb7484e1b3156307005d45b7bd0b98bf781aa42bd939f95e4cf9240",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/logo-2.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/logo.png",
+      "latime": 500,
+      "inaltime": 500,
+      "kb": 36,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:163"
+      ],
+      "duplicate": [],
+      "sha256": "17c6be2927a46cff6b3e8fcd5671ba396c3ca915423b1b2cde1d9c9c614e4513",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/1-removebg-preview.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/1-removebg-preview.png",
+      "latime": 500,
+      "inaltime": 500,
+      "kb": 31,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:152"
+      ],
+      "duplicate": [],
+      "sha256": "4332da8b1cf6ee5a4c65e471582cde398e747de1211f997f13b07459ac76ae9e",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/2-removebg-preview.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/2-removebg-preview.png",
+      "latime": 500,
+      "inaltime": 500,
+      "kb": 30,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:157"
+      ],
+      "duplicate": [],
+      "sha256": "c3496403d1218342360624b4049c4f9467737f7bb911ee2103d3fef0c4b5be37",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/logo-removebg-preview-1.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/logo-removebg-preview-1.png",
+      "latime": 497,
+      "inaltime": 502,
+      "kb": 224,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:110"
+      ],
+      "duplicate": [],
+      "sha256": "5328ca1797712e34399f883ee04622695c099dc819d6679fedc2c8de68f8ca0c",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/catalin-renghea.jpg",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/Catalin-Renghea.jpg",
+      "latime": 476,
+      "inaltime": 430,
+      "kb": 206,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:113"
+      ],
+      "duplicate": [],
+      "sha256": "c22421781e8d17adf01903ae8d3ac194538bce1ea0599295da7e36a99c688530",
+      "altPropus": "Cătălin Renghea în costum albastru cu dungi, în aer liber"
+    },
+    {
+      "cale": "/images/catalin-renghea-removebg-preview.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/Catalin-Renghea-removebg-preview.png",
+      "latime": 476,
+      "inaltime": 430,
+      "kb": 171,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:116"
+      ],
+      "duplicate": [],
+      "sha256": "1b39c096b24ae361f116b626f8dd00158303b94ac6a8505b8fd312f88637eb73",
+      "altPropus": "Cătălin Renghea în costum albastru cu dungi, fără fundal"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-about-pic4.webp",
+      "latime": 400,
+      "inaltime": 395,
+      "kb": 34,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:69"
+      ],
+      "duplicate": [],
+      "sha256": "c19c79f19d90d672b350bacc76157b89275702536bf3ffbb46c73f4842fcda6f",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-about-pic4.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-about-pic5.webp",
+      "latime": 400,
+      "inaltime": 395,
+      "kb": 20,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:70"
+      ],
+      "duplicate": [],
+      "sha256": "df1e5f4946b1494e8250fed76ebffbb3e994cebb7e92e5ecf4390bee679f9622",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-about-pic5.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-about-pic3.webp",
+      "latime": 400,
+      "inaltime": 395,
+      "kb": 17,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:68"
+      ],
+      "duplicate": [],
+      "sha256": "f35ab5647d24f75dfedf587eb30defa5001210916422ad2ab56825b3c62da6b1",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-about-pic3.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-about-pic2.webp",
+      "latime": 400,
+      "inaltime": 395,
+      "kb": 13,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:67"
+      ],
+      "duplicate": [],
+      "sha256": "58124397237d61e885d593921e7f6af82b54f4ba8aca1deec46bd21aae07c0c5",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-about-pic2.webp"
+    },
+    {
+      "cale": "/images/2-removebg-preview-1.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/2-removebg-preview-1.png",
+      "latime": 500,
+      "inaltime": 284,
+      "kb": 25,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:158"
+      ],
+      "duplicate": [],
+      "sha256": "138f1691d8a2773ad4dfc765b5c7ee601262e859890edeb5cc74c755e503cc40",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/ro.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/ro.png",
+      "latime": 483,
+      "inaltime": 289,
+      "kb": 20,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:124",
+        "https://catalinrenghea.ro/",
+        "https://catalinrenghea.ro/contact/",
+        "https://catalinrenghea.ro/program/"
+      ],
+      "duplicate": [],
+      "sha256": "8919ad3e110dd138ad95a96952a2bb75b1c6beb758033e48ed26de16639002e7",
+      "altPropus": "Steagul României stilizat"
+    },
+    {
+      "cale": "/images/4-removebg-preview-1.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/4-removebg-preview-1.png",
+      "latime": 307,
+      "inaltime": 291,
+      "kb": 19,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:168"
+      ],
+      "duplicate": [],
+      "sha256": "cdc99c34ec9793f78c3cf1678cdf6ae363441a611d74584c619989809d092850",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/2-removebg-preview-3.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/2-removebg-preview-3.png",
+      "latime": 382,
+      "inaltime": 223,
+      "kb": 18,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:160"
+      ],
+      "duplicate": [],
+      "sha256": "4aec3bba4fb0c7f22c01958a6ea0b8d61ce960391ebb37ee9ceb0dbb0ca1adc6",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/banner-secur.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/banner-secur.png",
+      "latime": 590,
+      "inaltime": 124,
+      "kb": 21,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:137",
+        "https://catalinrenghea.ro/",
+        "https://catalinrenghea.ro/despre-mine/",
+        "https://catalinrenghea.ro/contact/",
+        "https://catalinrenghea.ro/termeni-si-conditii/",
+        "https://catalinrenghea.ro/politica-de-confidentialitate/",
+        "https://catalinrenghea.ro/politica-de-cookies/",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/program/",
+        "https://catalinrenghea.ro/2023/08/02/curae-libero-aenean-auctor-sodales/",
+        "https://catalinrenghea.ro/2023/08/02/natoque-pharetra-semper-felis-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/metus-tortor-dui-habitant-lorem-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/dictumst-diam-scelerisque-quam-nulla/",
+        "https://catalinrenghea.ro/2023/08/02/nec-potenti-eu-tincidunt-eros-habitant/",
+        "https://catalinrenghea.ro/2023/07/31/curabitur-dolor-aliquet-sodales-pharetra-finibus/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "066043f1dca922ad6fd2a34ec14276a1a8876e074339a1e8e83cbac5b8240ef5",
+      "altPropus": "banner-secur"
+    },
+    {
+      "cale": "/images/logofinal-e1718117617905.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/logofinal-e1718117617905.png",
+      "latime": 257,
+      "inaltime": 267,
+      "kb": 15,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:172",
+        "https://catalinrenghea.ro/",
+        "https://catalinrenghea.ro/despre-mine/",
+        "https://catalinrenghea.ro/contact/",
+        "https://catalinrenghea.ro/termeni-si-conditii/",
+        "https://catalinrenghea.ro/politica-de-confidentialitate/",
+        "https://catalinrenghea.ro/politica-de-cookies/",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/program/",
+        "https://catalinrenghea.ro/2023/08/02/curae-libero-aenean-auctor-sodales/",
+        "https://catalinrenghea.ro/2023/08/02/natoque-pharetra-semper-felis-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/metus-tortor-dui-habitant-lorem-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/dictumst-diam-scelerisque-quam-nulla/",
+        "https://catalinrenghea.ro/2023/08/02/nec-potenti-eu-tincidunt-eros-habitant/",
+        "https://catalinrenghea.ro/2023/07/31/curabitur-dolor-aliquet-sodales-pharetra-finibus/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "584a60bf4db8011f4c8da4200c35a2ebe52cafab3780e1151eb92dd584a5014f",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/anpc-sal.webp",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/anpc-sal.webp",
+      "latime": 500,
+      "inaltime": 124,
+      "kb": 8,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:135",
+        "https://catalinrenghea.ro/",
+        "https://catalinrenghea.ro/despre-mine/",
+        "https://catalinrenghea.ro/contact/",
+        "https://catalinrenghea.ro/termeni-si-conditii/",
+        "https://catalinrenghea.ro/politica-de-confidentialitate/",
+        "https://catalinrenghea.ro/politica-de-cookies/",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/program/",
+        "https://catalinrenghea.ro/2023/08/02/curae-libero-aenean-auctor-sodales/",
+        "https://catalinrenghea.ro/2023/08/02/natoque-pharetra-semper-felis-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/metus-tortor-dui-habitant-lorem-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/dictumst-diam-scelerisque-quam-nulla/",
+        "https://catalinrenghea.ro/2023/08/02/nec-potenti-eu-tincidunt-eros-habitant/",
+        "https://catalinrenghea.ro/2023/07/31/curabitur-dolor-aliquet-sodales-pharetra-finibus/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "f4ed276698032bd216c6c8726670540724cdd990adafb232a919121b0d66ab1b",
+      "altPropus": "anpc-sal"
+    },
+    {
+      "cale": "/images/anpc-sol-2.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/anpc-sol-2.png",
+      "latime": 500,
+      "inaltime": 124,
+      "kb": 2,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:136",
+        "https://catalinrenghea.ro/",
+        "https://catalinrenghea.ro/despre-mine/",
+        "https://catalinrenghea.ro/contact/",
+        "https://catalinrenghea.ro/termeni-si-conditii/",
+        "https://catalinrenghea.ro/politica-de-confidentialitate/",
+        "https://catalinrenghea.ro/politica-de-cookies/",
+        "https://catalinrenghea.ro/news/",
+        "https://catalinrenghea.ro/program/",
+        "https://catalinrenghea.ro/2023/08/02/curae-libero-aenean-auctor-sodales/",
+        "https://catalinrenghea.ro/2023/08/02/natoque-pharetra-semper-felis-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/metus-tortor-dui-habitant-lorem-ultrices/",
+        "https://catalinrenghea.ro/2023/08/02/dictumst-diam-scelerisque-quam-nulla/",
+        "https://catalinrenghea.ro/2023/08/02/nec-potenti-eu-tincidunt-eros-habitant/",
+        "https://catalinrenghea.ro/2023/07/31/curabitur-dolor-aliquet-sodales-pharetra-finibus/",
+        "https://catalinrenghea.ro/author/securmenow/"
+      ],
+      "duplicate": [],
+      "sha256": "4394dfb1db93566fa72c196bfdcd3abbebbd4888204f0a44b24b122b4f3d61f2",
+      "altPropus": "anpc-sol-2"
+    },
+    {
+      "cale": "/images/1-removebg-preview-1.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/1-removebg-preview-1.png",
+      "latime": 237,
+      "inaltime": 249,
+      "kb": 17,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:167"
+      ],
+      "duplicate": [],
+      "sha256": "0d8e34734cda12c9f9879d65df50c9167803452adec403749aaad8c774ddf9dd",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": "/images/2-removebg-preview-2.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/06/2-removebg-preview-2.png",
+      "latime": 254,
+      "inaltime": 231,
+      "kb": 17,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:159"
+      ],
+      "duplicate": [],
+      "sha256": "6cea9d3a2f3d40acf96f3ec761733f31fefb6940c1bf9135ab94df246769b452",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-sign_program.svg",
+      "latime": 84,
+      "inaltime": 469,
+      "kb": 8,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:105",
+        "https://catalinrenghea.ro/program/"
+      ],
+      "duplicate": [],
+      "sha256": "126995790186efbf6a2eab7dc46fcd4f5a6ef9b0014ff68004aa9c0a630c2856",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-sign_program.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-home-pic1.webp",
+      "latime": 443,
+      "inaltime": 87,
+      "kb": 7,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:47"
+      ],
+      "duplicate": [],
+      "sha256": "ea06e1a2ffc1cb7230d50f8c84139a3e880d74e7fac1ccb4cbe6a0ee9eba3f5b",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-home-pic1.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-home-pic2.webp",
+      "latime": 443,
+      "inaltime": 87,
+      "kb": 6,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:48"
+      ],
+      "duplicate": [],
+      "sha256": "38e43c5969b8a96833e7215cc0fb2a4fe2b06c39f1668818a4332f9c88a78087",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-home-pic2.webp"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-sign_news.svg",
+      "latime": 66,
+      "inaltime": 352,
+      "kb": 4,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:104"
+      ],
+      "duplicate": [],
+      "sha256": "3608abe301b3a8a9d7b49b621ffd2e1935be016ddb920715ff7fe5ab5d0da663",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-sign_news.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3.svg",
+      "latime": 153,
+      "inaltime": 87,
+      "kb": 16,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:9"
+      ],
+      "duplicate": [],
+      "sha256": "ef4318108776ee3912c49ea9c062ead2af110fb3b37e988e04b778b90f2f2337",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-footer-logo.svg",
+      "latime": 153,
+      "inaltime": 87,
+      "kb": 15,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:62"
+      ],
+      "duplicate": [],
+      "sha256": "ca859637bcb38189df62d569dfefc2851e0b78241351107e7f7c6f9031f49944",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-footer-logo.svg"
+    },
+    {
+      "cale": "/images/logo-ezgif.com-resize-1.png",
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2024/05/logo-ezgif.com-resize-1.png",
+      "latime": 100,
+      "inaltime": 102,
+      "kb": 17,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:120"
+      ],
+      "duplicate": [],
+      "sha256": "cf4e71a9e81df8969e2b2b1dd3b7454db658193745099a9b8145b771e5636346",
+      "altPropus": "Logo Cătălin Renghea (monograma C/R cu săgeată)"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-news-downloadicon.svg",
+      "latime": 96,
+      "inaltime": 96,
+      "kb": 2,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:83"
+      ],
+      "duplicate": [],
+      "sha256": "7d15cea036698e8d6ea27dfb8a0ff0d4483d11067ed3dd4649cbb494b99f20db",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-news-downloadicon.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-program-pic2.svg",
+      "latime": 96,
+      "inaltime": 96,
+      "kb": 2,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:28",
+        "https://catalinrenghea.ro/program/"
+      ],
+      "duplicate": [],
+      "sha256": "f13b5c672634fe6300d704d19905e82fa1fa97939090adca9ae97bcf5c2a53fb",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-program-pic2.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-program-pic1.svg",
+      "latime": 96,
+      "inaltime": 96,
+      "kb": 2,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:27",
+        "https://catalinrenghea.ro/program/"
+      ],
+      "duplicate": [],
+      "sha256": "f7d57bd12d0139f9682b0f348d8d9e21628d0abef139313af12435cb2505d5c5",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-program-pic1.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-program-pic3.svg",
+      "latime": 96,
+      "inaltime": 96,
+      "kb": 2,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:29",
+        "https://catalinrenghea.ro/program/"
+      ],
+      "duplicate": [],
+      "sha256": "7cd9742bbfe9a830d335bdfb92a89fdac6fd2b721cd812d3551961868faf1c6b",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-program-pic3.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-program-pic4.svg",
+      "latime": 96,
+      "inaltime": 96,
+      "kb": 1,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:30",
+        "https://catalinrenghea.ro/program/"
+      ],
+      "duplicate": [],
+      "sha256": "e8f33fdd336c2bbd729d44a1e535fcc733ff863c6da3784f118466fba64e8cdc",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-program-pic4.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-program-icon2.svg",
+      "latime": 20,
+      "inaltime": 80,
+      "kb": 1,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:80",
+        "https://catalinrenghea.ro/program/"
+      ],
+      "duplicate": [],
+      "sha256": "98f0e0d5e16041392bd7f1ff1f5bca11b5852908973dd3f7b4c0905ba7f6249d",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-program-icon2.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-home-icon2.svg",
+      "latime": 38,
+      "inaltime": 31,
+      "kb": 1,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:57"
+      ],
+      "duplicate": [],
+      "sha256": "53f30eedcef2d296d490c4804b5d068df25f3c5842a34085a02bf8b5362ab9d7",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-home-icon2.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/07/politics3-program-icon1.svg",
+      "latime": 49,
+      "inaltime": 24,
+      "kb": 1,
+      "lowRes": false,
+      "whatsapp": false,
+      "pagini": [
+        "media:26"
+      ],
+      "duplicate": [],
+      "sha256": "789cdf024f8c051c610c655e3177cb9e6c9477f21628b1b5df1e2ab0e9538ac6",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-program-icon1.svg"
+    },
+    {
+      "cale": null,
+      "sursa": "https://catalinrenghea.ro/wp-content/uploads/2023/08/politics3-quotes.svg",
+      "latime": 32,
+      "inaltime": 23,
+      "kb": 2,
+      "lowRes": true,
+      "whatsapp": false,
+      "pagini": [
+        "media:65"
+      ],
+      "duplicate": [],
+      "sha256": "688e15de6fb5d3fe456a64a3382b77c314e688dc2c809bf35fd5e2645aeee653",
+      "altPropus": "Imagine demo a temei BeTheme (nu aparține clientului, nu se folosește)",
+      "demoTema": true,
+      "caleOriginala": "/images/politics3-quotes.svg"
+    }
+  ]
+}

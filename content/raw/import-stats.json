@@ -1,0 +1,87 @@
+{
+  "pagini": 14,
+  "paginiDetaliu": [
+    {
+      "slug": "politica-de-cookies",
+      "sursa": "api",
+      "cuvinte": 546
+    },
+    {
+      "slug": "politica-de-confidentialitate",
+      "sursa": "api",
+      "cuvinte": 459
+    },
+    {
+      "slug": "termeni-si-conditii",
+      "sursa": "api",
+      "cuvinte": 374
+    },
+    {
+      "slug": "contact",
+      "sursa": "api",
+      "cuvinte": 31
+    },
+    {
+      "slug": "news",
+      "sursa": "api",
+      "cuvinte": 70
+    },
+    {
+      "slug": "program",
+      "sursa": "api",
+      "cuvinte": 342
+    },
+    {
+      "slug": "despre-mine",
+      "sursa": "api",
+      "cuvinte": 2884
+    },
+    {
+      "slug": "home",
+      "sursa": "api",
+      "cuvinte": 611
+    },
+    {
+      "slug": "curae-libero-aenean-auctor-sodales",
+      "sursa": "api",
+      "cuvinte": 284
+    },
+    {
+      "slug": "natoque-pharetra-semper-felis-ultrices",
+      "sursa": "api",
+      "cuvinte": 308
+    },
+    {
+      "slug": "metus-tortor-dui-habitant-lorem-ultrices",
+      "sursa": "api",
+      "cuvinte": 310
+    },
+    {
+      "slug": "dictumst-diam-scelerisque-quam-nulla",
+      "sursa": "api",
+      "cuvinte": 311
+    },
+    {
+      "slug": "nec-potenti-eu-tincidunt-eros-habitant",
+      "sursa": "api",
+      "cuvinte": 310
+    },
+    {
+      "slug": "curabitur-dolor-aliquet-sodales-pharetra-finibus",
+      "sursa": "api",
+      "cuvinte": 286
+    }
+  ],
+  "imaginiGasite": 92,
+  "imaginiUnice": 87,
+  "duplicateEliminate": 5,
+  "necitite": [],
+  "lowRes": 42,
+  "whatsapp": 8,
+  "adreseEsuate": 1,
+  "note": [
+    "Paginile /program/ și /news/ și cele 6 articole din 2023 sunt conținut demo al temei BeTheme (engleză/latină, cifre false). Nu se folosesc.",
+    "36 de imagini 'politics3-*' sunt demo-uri ale temei; marcate demoTema în images.json.",
+    "Conținutul real al paginilor e în HTML-ul randat (page builder Muffin), nu în API-ul WordPress."
+  ]
+}
