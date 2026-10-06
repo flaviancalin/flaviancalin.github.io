@@ -1,0 +1,14 @@
+{
+  "categorii": [
+    { "id": "strazi", "titlu": "Străzi și trotuare", "icon": "road" },
+    { "id": "iluminat", "titlu": "Iluminat", "icon": "bulb" },
+    { "id": "parcari", "titlu": "Parcări și trafic", "icon": "car" },
+    { "id": "parcuri", "titlu": "Parcuri și spații verzi", "icon": "tree" },
+    { "id": "salubritate", "titlu": "Salubritate", "icon": "bin" },
+    { "id": "scoli", "titlu": "Școli și grădinițe", "icon": "school" },
+    { "id": "social", "titlu": "Social", "icon": "hand" },
+    { "id": "siguranta", "titlu": "Siguranță", "icon": "shield" },
+    { "id": "altele", "titlu": "Altele", "icon": "dots" }
+  ],
+  "statusuri": ["Nouă", "În analiză", "Trimisă la instituție", "Rezolvată"]
+}

@@ -1,0 +1,8 @@
+{
+  "_nota": "Instituțiile și anii se completează din site-ul actual.",
+  "studii": [
+    { "nivel": "Doctorat", "domeniu": "Științe Politice", "institutie": null, "ani": null },
+    { "nivel": "Master", "domeniu": null, "institutie": null, "ani": null },
+    { "nivel": "Licență", "domeniu": null, "institutie": null, "ani": null }
+  ]
+}

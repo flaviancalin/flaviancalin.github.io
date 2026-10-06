@@ -1,0 +1,9 @@
+{
+  "_nota": "Doar cifrele care apar pe site-ul actual. Câmpul 'sursa' se completează ulterior cu un link verificabil.",
+  "cifre": [
+    { "id": "prim-ministri", "valoare": 3, "prefix": "", "sufix": "", "eticheta": "prim-miniștri pe care i-a consiliat", "sursa": null },
+    { "id": "nokian", "valoare": 2, "prefix": "", "sufix": " mld €", "eticheta": "investiția Nokian", "sursa": null },
+    { "id": "clariant", "valoare": 200, "prefix": "", "sufix": " mil €", "eticheta": "investiția Clariant, Craiova", "sursa": null },
+    { "id": "imm", "valoare": 350, "prefix": "", "sufix": "", "eticheta": "de IMM-uri au primit formare", "sursa": null }
+  ]
+}

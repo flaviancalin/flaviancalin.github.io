@@ -1,0 +1,89 @@
+{
+  "_nota": "Temele sunt sugerate în brief. Titlul scurt e o propunere; problema, soluția și angajamentul se scriu de client. Nu se inventează conținut.",
+  "teme": [
+    {
+      "slug": "strazi-si-trotuare",
+      "titlu": "Străzi și trotuare",
+      "subtitlu": "Drumuri și trotuare pe care se poate merge în siguranță.",
+      "subtitluStatus": "propunere-agentie",
+      "principala": true,
+      "problema": "[DE COMPLETAT DE CLIENT]",
+      "solutie": "[DE COMPLETAT DE CLIENT]",
+      "angajamente": [
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]"
+      ]
+    },
+    {
+      "slug": "parcari-si-trafic",
+      "titlu": "Parcări și trafic",
+      "subtitlu": "Mai puțin timp pierdut în trafic și locuri de parcare reale.",
+      "subtitluStatus": "propunere-agentie",
+      "principala": true,
+      "problema": "[DE COMPLETAT DE CLIENT]",
+      "solutie": "[DE COMPLETAT DE CLIENT]",
+      "angajamente": [
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]"
+      ]
+    },
+    {
+      "slug": "parcuri-si-spatii-verzi",
+      "titlu": "Parcuri și spații verzi",
+      "subtitlu": "Parcuri îngrijite și mai mult verde lângă casă.",
+      "subtitluStatus": "propunere-agentie",
+      "principala": true,
+      "problema": "[DE COMPLETAT DE CLIENT]",
+      "solutie": "[DE COMPLETAT DE CLIENT]",
+      "angajamente": [
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]"
+      ]
+    },
+    {
+      "slug": "educatie",
+      "titlu": "Educație",
+      "subtitlu": "Școli și grădinițe sigure, cu locuri pentru toți copiii.",
+      "subtitluStatus": "propunere-agentie",
+      "principala": false,
+      "problema": "[DE COMPLETAT DE CLIENT]",
+      "solutie": "[DE COMPLETAT DE CLIENT]",
+      "angajamente": [
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]"
+      ]
+    },
+    {
+      "slug": "social",
+      "titlu": "Social",
+      "subtitlu": "Sprijin rapid pentru cei care au nevoie de el.",
+      "subtitluStatus": "propunere-agentie",
+      "principala": false,
+      "problema": "[DE COMPLETAT DE CLIENT]",
+      "solutie": "[DE COMPLETAT DE CLIENT]",
+      "angajamente": [
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]"
+      ]
+    },
+    {
+      "slug": "siguranta",
+      "titlu": "Siguranță",
+      "subtitlu": "Străzi luminate și cartiere în care te simți în siguranță.",
+      "subtitluStatus": "propunere-agentie",
+      "principala": false,
+      "problema": "[DE COMPLETAT DE CLIENT]",
+      "solutie": "[DE COMPLETAT DE CLIENT]",
+      "angajamente": [
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]",
+        "[DE COMPLETAT DE CLIENT]"
+      ]
+    }
+  ]
+}

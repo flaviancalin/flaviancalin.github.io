@@ -1,0 +1,44 @@
+{
+  "_nota": "Articole EXEMPLU pentru structura paginii. Se înlocuiesc cu articole reale.",
+  "articole": [
+    {
+      "slug": "articol-exemplu-1",
+      "titlu": "Articol exemplu 1",
+      "data": null,
+      "categorie": "Comunicat",
+      "rezumat": "[DE COMPLETAT DE CLIENT]",
+      "corp": [
+        "[DE COMPLETAT DE CLIENT]"
+      ],
+      "exemplu": true
+    },
+    {
+      "slug": "articol-exemplu-2",
+      "titlu": "Articol exemplu 2",
+      "data": null,
+      "categorie": "Din cartiere",
+      "rezumat": "[DE COMPLETAT DE CLIENT]",
+      "corp": [
+        "[DE COMPLETAT DE CLIENT]"
+      ],
+      "exemplu": true
+    },
+    {
+      "slug": "articol-exemplu-3",
+      "titlu": "Articol exemplu 3",
+      "data": null,
+      "categorie": "Presă",
+      "rezumat": "[DE COMPLETAT DE CLIENT]",
+      "corp": [
+        "[DE COMPLETAT DE CLIENT]"
+      ],
+      "exemplu": true
+    }
+  ],
+  "kitPresa": {
+    "bioScurta": null,
+    "portret": null,
+    "logo": null,
+    "contactPresa": "office@catalinrenghea.ro"
+  }
+}

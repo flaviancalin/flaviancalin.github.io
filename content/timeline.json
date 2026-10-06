@@ -1,0 +1,109 @@
+{
+  "_nota": "Cronologie comprimată în 4 etape. Joburile și grupările vin din brief; perioadele, responsabilitățile și realizările se completează din textul scrapat (fără rescriere în sens). Câmpurile goale apar pe site ca '[DE COMPLETAT DIN SITE-UL ACTUAL]'.",
+  "etape": [
+    {
+      "id": "guvern",
+      "titlu": "Guvern și ministere",
+      "rezumat": "Consilier pentru trei prim-miniștri. Roluri în Guvern și la Ministerul Economiei.",
+      "joburi": [
+        {
+          "id": "guvern-consilier",
+          "rol": "Consilier al prim-ministrului",
+          "organizatie": "Guvernul României",
+          "perioada": null,
+          "responsabilitati": [],
+          "realizari": []
+        },
+        {
+          "id": "sef-cabinet",
+          "rol": "Șef de cabinet",
+          "organizatie": null,
+          "perioada": null,
+          "responsabilitati": [],
+          "realizari": []
+        },
+        {
+          "id": "min-economiei",
+          "rol": null,
+          "organizatie": "Ministerul Economiei",
+          "perioada": null,
+          "responsabilitati": [],
+          "realizari": []
+        },
+        {
+          "id": "corp-control",
+          "rol": "Corp de control",
+          "organizatie": null,
+          "perioada": "02–31.07.2024",
+          "responsabilitati": [],
+          "realizari": []
+        }
+      ],
+      "rezumatStatus": "din-brief-de-rafinat-din-site"
+    },
+    {
+      "id": "parlament",
+      "titlu": "Parlament",
+      "rezumat": "Senatul României și activitate de consilier parlamentar.",
+      "joburi": [
+        {
+          "id": "senat",
+          "rol": null,
+          "organizatie": "Senatul României",
+          "perioada": null,
+          "responsabilitati": [],
+          "realizari": []
+        },
+        {
+          "id": "consilier-parlamentar",
+          "rol": "Consilier parlamentar",
+          "organizatie": null,
+          "perioada": "02–31.07.2024",
+          "responsabilitati": [],
+          "realizari": []
+        }
+      ],
+      "rezumatStatus": "din-brief-de-rafinat-din-site"
+    },
+    {
+      "id": "local",
+      "titlu": "Administrație locală și instituții",
+      "rezumat": "DGASPC Sector 4 și AMEPIP: instituții care lucrează direct cu oamenii.",
+      "joburi": [
+        {
+          "id": "dgaspc",
+          "rol": null,
+          "organizatie": "DGASPC Sector 4",
+          "perioada": null,
+          "responsabilitati": [],
+          "realizari": []
+        },
+        {
+          "id": "amepip",
+          "rol": null,
+          "organizatie": "AMEPIP",
+          "perioada": null,
+          "responsabilitati": [],
+          "realizari": []
+        }
+      ],
+      "rezumatStatus": "din-brief-de-rafinat-din-site"
+    },
+    {
+      "id": "consultanta",
+      "titlu": "Consultanță și proiecte",
+      "rezumat": "Consultanță în proiecte, prin BEST SMART.",
+      "joburi": [
+        {
+          "id": "best-smart",
+          "rol": null,
+          "organizatie": "BEST SMART",
+          "perioada": null,
+          "responsabilitati": [],
+          "realizari": []
+        }
+      ],
+      "rezumatStatus": "din-brief-de-rafinat-din-site"
+    }
+  ]
+}

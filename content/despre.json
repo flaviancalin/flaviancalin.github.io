@@ -1,0 +1,9 @@
+{
+  "_nota": "Povestea în 3-4 paragrafe se scrie DOAR din textul pagini 'Despre mine' scrapate. Până atunci, paragraful 1 folosește exclusiv fapte confirmate în brief.",
+  "paragrafe": [
+    { "text": "Cătălin Renghea a fost consilier pentru trei prim-miniștri și a lucrat în Guvern, în Parlament și în instituții ale Sectorului 4, inclusiv la DGASPC Sector 4.", "status": "din-brief" },
+    { "text": null, "status": "de-completat-din-site" },
+    { "text": null, "status": "de-completat-din-site" }
+  ],
+  "cvPdf": null
+}

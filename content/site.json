@@ -1,0 +1,20 @@
+{
+  "_nota": "Date generale. Contactele și rețelele sociale vin din site-ul actual (confirmate în brief). Sloganul este o propunere a agenției, de aprobat de client.",
+  "nume": "Cătălin Renghea",
+  "rol": "Candidat la Primăria Sectorului 4",
+  "oras": "București, Sector 4",
+  "slogan": "Sectorul 4 merită o primărie care ascultă și rezolvă.",
+  "sloganStatus": "propunere-agentie",
+  "contact": {
+    "telefon": "+40 769 911 133",
+    "telefonHref": "tel:+40769911133",
+    "email": "office@catalinrenghea.ro"
+  },
+  "social": [
+    { "nume": "Facebook", "handle": "Catalin.Renghea", "url": "https://www.facebook.com/Catalin.Renghea" },
+    { "nume": "TikTok", "handle": "@catalinrenghea.official", "url": "https://www.tiktok.com/@catalinrenghea.official" },
+    { "nume": "LinkedIn", "handle": "cătălin-renghea", "url": "https://www.linkedin.com/in/c%C4%83t%C4%83lin-renghea/" }
+  ],
+  "whatsappCanal": null,
+  "previewUrl": "https://catalinrenghea.ro"
+}
