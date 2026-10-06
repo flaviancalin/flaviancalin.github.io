@@ -1,69 +1,111 @@
-import Image from "next/image";
+import Link from "next/link";
+import { Page, Section } from "@/components/page";
+import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { CountUp } from "@/components/count-up";
+import { Icon } from "@/components/icons";
+import { TemaCard, ArticolCard } from "@/components/cards";
+import { Newsletter } from "@/components/newsletter";
+import { ARTICOLE, CIFRE, SITE, TEME } from "@/lib/content";
 
 export default function Home() {
+  const principale = TEME.filter((t) => t.principala).slice(0, 3);
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <Page>
+      {/* Hero: un singur mesaj, portret mare, CTA dublu */}
+      <section aria-labelledby="hero-title" className="overflow-hidden">
+        <div className="container-x grid items-center gap-10 pt-10 pb-16 md:grid-cols-[1.1fr_0.9fr] md:gap-16 md:pt-20 md:pb-28">
+          <div className="order-2 md:order-1">
+            <p className="eyebrow mb-4">{SITE.nume} · {SITE.rol}</p>
+            <h1 id="hero-title" className="text-hero max-w-[14ch]">{SITE.slogan}</h1>
+            <p className="measure mt-6 text-lead text-ink-2">
+              Spune-mi ce nu merge pe strada ta. Fiecare sesizare primește un cod de referință, ca s-o poți urmări.
+            </p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <Link href="/spune-mi-problema" className="btn btn-primary">Spune-mi problema ta <Icon name="arrow" className="h-5 w-5" /></Link>
+              <Link href="/implica-te" className="btn btn-secondary">Alătură-te</Link>
+            </div>
+          </div>
+          <div className="order-1 md:order-2">
+            <PhotoPlaceholder hint="Portret principal, vertical, minimum 1600px" ratio="4 / 5" className="mx-auto w-full max-w-md md:max-w-none" />
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Cifre-cheie: doar cele de pe site-ul actual */}
+      <Section tone="gray" labelledBy="cifre-title">
+        <h2 id="cifre-title" className="text-h2 max-w-[20ch]">Experiență care se poate număra.</h2>
+        <dl className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+          {CIFRE.map((c) => (
+            <div key={c.id} className="reveal border-t border-black/10 pt-6">
+              <dt className="sr-only">{c.eticheta}</dt>
+              <dd className="text-[clamp(2.75rem,2rem+3vw,4.25rem)] font-semibold leading-none tracking-tight text-brand">
+                <CountUp value={c.valoare} prefix={c.prefix} suffix={c.sufix} />
+              </dd>
+              <dd className="mt-3 text-ink-2" aria-hidden="true">{c.eticheta}</dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
+
+      {/* Video de prezentare (placeholder) */}
+      <Section labelledBy="video-title">
+        <div className="grid items-center gap-10 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
+          <div>
+            <h2 id="video-title" className="text-h2">Cine sunt, în două minute.</h2>
+            <p className="measure mt-5 text-lead text-ink-2">Un scurt video de prezentare va sta aici.</p>
+          </div>
+          <div className="reveal relative">
+            <PhotoPlaceholder label="VIDEO DE ÎNLOCUIT" hint="Video de prezentare, 16:9, cu subtitrare" ratio="16 / 9" />
+            <span aria-hidden="true" className="absolute left-1/2 top-1/2 grid h-16 w-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white/90 text-ink shadow-[var(--shadow-lift)]">
+              <Icon name="play" className="ml-1 h-7 w-7" fill="currentColor" />
+            </span>
+          </div>
         </div>
-      </main>
-    </div>
+      </Section>
+
+      {/* Teme principale */}
+      <Section tone="gray" labelledBy="teme-title">
+        <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <h2 id="teme-title" className="text-h2 max-w-[16ch]">Ce schimbăm în Sectorul 4.</h2>
+          <Link href="/program" className="btn btn-quiet self-start md:self-auto">Tot programul <Icon name="arrow" className="h-5 w-5" /></Link>
+        </div>
+        <ul className="mt-12 grid gap-5 md:grid-cols-3">
+          {principale.map((t) => <li key={t.slug} className="reveal"><TemaCard tema={t} /></li>)}
+        </ul>
+      </Section>
+
+      {/* Apel la acțiune: funcția centrală */}
+      <Section tone="brand" labelledBy="problema-title">
+        <div className="grid gap-8 md:grid-cols-[1.3fr_1fr] md:items-end">
+          <div>
+            <h2 id="problema-title" className="text-h2 max-w-[18ch]">Ce nu merge în cartierul tău?</h2>
+            <p className="measure mt-5 text-lead text-white/85">Groapă, stâlp stins, parc neîngrijit. Alegi categoria, pui pinul pe hartă și scrii o propoziție. Durează un minut.</p>
+          </div>
+          <div className="md:justify-self-end">
+            <Link href="/spune-mi-problema" className="btn bg-white text-brand hover:bg-brand-soft">Spune-mi problema ta <Icon name="arrow" className="h-5 w-5" /></Link>
+          </div>
+        </div>
+      </Section>
+
+      {/* Noutăți */}
+      <Section labelledBy="noutati-title">
+        <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <h2 id="noutati-title" className="text-h2">Ultimele noutăți.</h2>
+          <Link href="/noutati" className="btn btn-quiet self-start md:self-auto">Toate noutățile <Icon name="arrow" className="h-5 w-5" /></Link>
+        </div>
+        <ul className="mt-12 grid gap-5 md:grid-cols-3">
+          {ARTICOLE.slice(0, 3).map((a) => <li key={a.slug} className="reveal"><ArticolCard a={a} /></li>)}
+        </ul>
+      </Section>
+
+      {/* Newsletter */}
+      <Section tone="gray" labelledBy="nl-title">
+        <div className="text-center">
+          <h2 id="nl-title" className="text-h2">Află primul ce se întâmplă.</h2>
+          <p className="mx-auto mt-4 max-w-xl text-lead text-ink-2">Un email scurt, doar când avem ceva important de spus.</p>
+        </div>
+        <div className="mt-10"><Newsletter /></div>
+      </Section>
+    </Page>
   );
 }
