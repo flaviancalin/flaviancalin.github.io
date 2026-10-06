@@ -1,0 +1,85 @@
+<title>Scraper catalinrenghea.ro</title>
+<style>
+/* Layout: o singură coloană îngustă, citită pe telefon, pași numerotați (ordinea contează). */
+:root{--bg:#f5f6f8;--surface:#fff;--fg:#14171c;--muted:#5b6370;--line:#e1e4ea;--accent:#1a4fd6;--accent-fg:#fff;--code:#eef1f6;
+--sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,system-ui,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1115;--surface:#181b21;--fg:#eceef2;--muted:#9aa2b1;--line:#2a2f38;--accent:#7aa2ff;--accent-fg:#0f1115;--code:#20242c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1115;--surface:#181b21;--fg:#eceef2;--muted:#9aa2b1;--line:#2a2f38;--accent:#7aa2ff;--accent-fg:#0f1115;--code:#20242c;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:17px/1.5 var(--sans);padding:24px 16px 48px}
+main{max-width:620px;margin:0 auto;display:grid;gap:28px}
+h1{font-size:clamp(26px,6vw,34px);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:20px;margin:0 0 12px}
+p{margin:0}.lead{color:var(--muted)}
+section{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+ol{margin:0;padding-left:1.3em;display:grid;gap:10px}
+.note{font-size:15px;color:var(--muted);margin-top:12px}
+textarea{width:100%;box-sizing:border-box;height:110px;font:12px/1.4 var(--mono);background:var(--code);color:var(--fg);border:1px solid var(--line);border-radius:12px;padding:10px;resize:vertical;word-break:break-all}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+button,.drag{min-height:48px;padding:0 22px;border-radius:999px;border:0;font:600 16px var(--sans);background:var(--accent);color:var(--accent-fg);cursor:pointer;display:inline-flex;align-items:center;text-decoration:none}
+.drag{background:var(--code);color:var(--fg);border:1px dashed var(--muted);cursor:grab}
+button:focus-visible,.drag:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+#status{font-size:15px;color:var(--muted)}
+details{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}details:first-of-type{border-top:0;padding-top:0;margin-top:0}
+summary{font-weight:600;cursor:pointer;min-height:44px;display:flex;align-items:center}
+details ol{margin-top:6px}
+code{font:14px var(--mono);background:var(--code);padding:1px 6px;border-radius:6px}
+</style>
+<main>
+<header style="display:grid;gap:10px">
+<h1>Scraper pentru catalinrenghea.ro</h1>
+<p class="lead">Un bookmark care, apăsat pe site, strânge textele, API-ul WordPress, CSS-ul și toate pozele la rezoluție maximă într-un singur ZIP. Rulează doar în browserul tău și nu trimite nimic nicăieri.</p>
+</header>
+
+<section>
+<h2>1. Copiază codul</h2>
+<textarea id="code" readonly aria-label="Codul bookmarklet-ului">javascript:(async()=>{if(window.__crScraper)return;window.__crScraper=1;const t=location.origin,e=[],n={site:t,date:(new Date).toISOString(),userAgent:navigator.userAgent,pages:[],assets:[],failed:[]},s=document.createElement("div");s.style.cssText="position:fixed;left:8px;right:8px;bottom:8px;z-index:2147483647;background:#111;color:#fff;font:15px/1.4 system-ui,sans-serif;padding:14px 16px;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.4)";const a=document.createElement("div"),o=document.createElement("div");o.style.cssText="opacity:.7;font-size:13px;margin-top:4px;word-break:break-all",s.append(a,o),document.body.appendChild(s);const i=(t,e="")=>{a.textContent=t,o.textContent=e},r=e=>{try{return new URL(e,t).origin===t}catch{return!1}},c=(e,n=t)=>{try{const t=new URL(e,n);return t.hash="",t.href}catch{return null}};async function l(t,e="blob"){const n=new AbortController,s=setTimeout(()=>n.abort(),9e4);try{const s=await fetch(t,{credentials:"omit",signal:n.signal});return s.ok?{ok:!0,r:s,data:await s[e]()}:{ok:!1,status:s.status,r:s}}catch(t){return{ok:!1,status:String(t&amp;&amp;t.name||t)}}finally{clearTimeout(s)}}const f=(t,n)=>e.push({name:t,blob:n instanceof Blob?n:new Blob([n])}),d=t=>{const e=new URL(t).pathname.replace(/^\/+/,"");return decodeURIComponent(e)||"index"};const p=new Map;function u(e,n,s){const a=c(e,s);if(!a||!r(a))return;const o=new URL(a).pathname,i=o.includes("/wp-content/uploads/"),l=/\.(woff2?|ttf|otf|eot)$/i.test(o),f=/\.(png|jpe?g|webp|gif|svg|avif|ico|pdf)$/i.test(o);if(!i&amp;&amp;!l&amp;&amp;!f)return;const d=i?function(e){const n=new URL(e);n.search="";const s=[],a=n.pathname,o=a.replace(/-\d+x\d+(?=\.[a-z0-9]+$)/i,""),i=o.replace(/-scaled(?=\.[a-z0-9]+$)/i,"");for(const e of[i,o,a])s.includes(t+e)||s.push(t+e);return s}(a):[a],u=d[0],g=p.get(u)||{candidates:[],foundOn:new Set,seenAs:new Set};for(const t of d)g.candidates.includes(t)||g.candidates.push(t);g.seenAs.add(a),n&amp;&amp;g.foundOn.add(n),p.set(u,g)}const g=new Set;async function h(t,e){const s=c(t);if(!s||g.has(s)||!r(s))return;g.add(s);const a=await l(s,"text");if(a.ok){f("css/"+d(s).replace(/\//g,"__"),a.data);for(const t of a.data.matchAll(/url\(\s*['"]?([^'")]+)['"]?\s*\)/g))u(t[1],e,s);for(const t of a.data.matchAll(/@import\s+(?:url\()?['"]([^'"]+)['"]/g))await h(c(t[1],s),e)}else n.failed.push({url:s,status:a.status})}function m(t,e,n){const s=(new DOMParser).parseFromString(t,"text/html"),a=["src","data-src","data-lazy-src","data-orig-file","data-large-file","data-bg","data-background","poster","content","href"];s.querySelectorAll("*").forEach(t=>{for(const n of a){const s=t.getAttribute(n);s&amp;&amp;/\/wp-content\/|\.(png|jpe?g|webp|gif|svg|avif|ico|pdf)(\?|$)/i.test(s)&amp;&amp;u(s,e,e)}for(const n of["srcset","data-srcset","data-lazy-srcset"]){const s=t.getAttribute(n);s&amp;&amp;s.split(",").forEach(t=>u(t.trim().split(/\s+/)[0],e,e))}const n=t.getAttribute("style");if(n)for(const t of n.matchAll(/url\(\s*['"]?([^'")]+)['"]?\s*\)/g))u(t[1],e,e)}),s.querySelectorAll("style").forEach(t=>{for(const n of t.textContent.matchAll(/url\(\s*['"]?([^'")]+)['"]?\s*\)/g))u(n[1],e,e)});const o=[...s.querySelectorAll('link[rel~="stylesheet"][href]')].map(t=>c(t.getAttribute("href"),e));return s.querySelectorAll("a[href]").forEach(t=>{const s=c(t.getAttribute("href"),e);s&amp;&amp;r(s)&amp;&amp;n.push(s)}),o}const w=t=>{const e=new URL(t);return!e.search&amp;&amp;(!/^\/(wp-admin|wp-login|wp-json|xmlrpc|feed|comments\/feed|wp-content|wp-includes)/.test(e.pathname)&amp;&amp;(!/\/feed\/?$/.test(e.pathname)&amp;&amp;(!/\.[a-z0-9]{2,5}$/i.test(e.pathname)||/\.html?$/i.test(e.pathname))))},x={};for(const e of["pages","posts","media","categories","tags"]){const s=[];for(let a=1;a&lt;50;a++){i(`API WordPress: ${e}`,`pagina ${a}`);const o=await l(`${t}/wp-json/wp/v2/${e}?per_page=100&amp;page=${a}`,"text");if(!o.ok){1===a&amp;&amp;n.failed.push({url:`/wp-json/wp/v2/${e}`,status:o.status});break}let r;try{r=JSON.parse(o.data)}catch{break}if(!Array.isArray(r)||!r.length)break;if(s.push(...r),a>=(+o.r.headers.get("X-WP-TotalPages")||1))break}x[e]=s,f(`api/${e}.json`,JSON.stringify(s,null,1))}const b=await l(`${t}/wp-json/`,"text");if(b.ok)try{const t=JSON.parse(b.data);f("api/site.json",JSON.stringify({name:t.name,description:t.description,url:t.url,home:t.home},null,1))}catch{}for(const t of x.media||[]){if(!t.source_url)continue;u(t.source_url,t.post?`media:${t.id} post:${t.post}`:`media:${t.id}`);const e=t.media_details&amp;&amp;t.media_details.original_image;e&amp;&amp;u(t.source_url.replace(/[^/]+$/,e),`media:${t.id}`)}const y=[...["/","/despre-mine/","/contact/","/termeni-si-conditii/","/politica-de-confidentialitate/","/politica-de-cookies/"].map(e=>t+e)];for(const t of["pages","posts"])for(const e of x[t]||[])e.link&amp;&amp;y.push(e.link);for(const e of["/wp-sitemap.xml","/sitemap_index.xml","/sitemap.xml"]){i("Citesc sitemap-ul",e);const n=await l(t+e,"text");if(!n.ok)continue;f("sitemap/"+e.slice(1),n.data);const s=[...n.data.matchAll(/&lt;loc>\s*([^&lt;\s]+)\s*&lt;\/loc>/g)].map(t=>t[1]);for(const t of s)if(/\.xml(\?|$)/.test(t)){const e=await l(t,"text");if(e.ok){f("sitemap/"+d(t).replace(/\//g,"__"),e.data);for(const t of e.data.matchAll(/&lt;loc>\s*([^&lt;\s]+)\s*&lt;\/loc>/g))y.push(t[1]);for(const t of e.data.matchAll(/&lt;image:loc>\s*([^&lt;\s]+)\s*&lt;\/image:loc>/g))u(t[1],"sitemap")}}else y.push(t);break}const U=new Set;for(;y.length&amp;&amp;U.size&lt;200;){const t=c(y.shift());if(!t||!r(t)||!w(t))continue;const e=t.replace(/\/$/,"");if(U.has(e))continue;U.add(e),i(`Pagini: ${U.size}`,t);const s=await l(t,"text");if(!s.ok){n.failed.push({url:t,status:s.status});continue}const a=s.r.url||t,o="html/"+(d(a).replace(/\/$/,"").replace(/\//g,"__")||"index")+".html";f(o,s.data),n.pages.push({url:a,file:o});const p=[],g=m(s.data,a,p);for(const t of g)t&amp;&amp;await h(t,a);for(const t of p)w(t)?y.push(t):u(t,a,a)}const $=[...p.values()],A=new Set;let k=0,S=0;async function _(){for(;$.length;){const t=$.shift();let e=!1;for(const s of t.candidates){const a=await l(s);if(a.ok&amp;&amp;a.data.size>0&amp;&amp;!/text\/html/.test(a.data.type)){let o="files/"+d(s);A.has(o)||(A.add(o),f(o,a.data),S+=a.data.size),n.assets.push({url:s,file:o,bytes:a.data.size,type:a.data.type,seenAs:[...t.seenAs],foundOn:[...t.foundOn]}),e=!0;break}}e||n.failed.push({url:t.candidates[t.candidates.length-1],status:"not found"}),k++,i(`Fi%C8%99iere: ${k} / ${k+$.length}`,`${(S/1048576).toFixed(1)} MB desc%C4%83rca%C8%9Bi`)}}await Promise.all([_(),_(),_(),_()]),f("manifest.json",JSON.stringify(n,null,1)),i("Construiesc arhiva ZIP%E2%80%A6",`${e.length} fi%C8%99iere`);const z=new Uint32Array(256);for(let t=0;t&lt;256;t++){let e=t;for(let t=0;t&lt;8;t++)e=1&amp;e?3988292384^e>>>1:e>>>1;z[t]=e>>>0}const O=t=>{let e=4294967295;for(let n=0;n&lt;t.length;n++)e=z[255&amp;(e^t[n])]^e>>>8;return(4294967295^e)>>>0},v=new TextEncoder,j=[],C=[];let B=0;const E=new Date,L=E.getHours()&lt;&lt;11|E.getMinutes()&lt;&lt;5|E.getSeconds()>>1,P=E.getFullYear()-1980&lt;&lt;9|E.getMonth()+1&lt;&lt;5|E.getDate(),R=new Set;for(const t of e){let e=t.name;for(let n=2;R.has(e);n++)e=t.name.replace(/(\.[^./]+)?$/,`-${n}$1`);R.add(e);const n=v.encode(e),s=new Uint8Array(await t.blob.arrayBuffer()),a=O(s),o=s.length,i=new DataView(new ArrayBuffer(30));i.setUint32(0,67324752,!0),i.setUint16(4,20,!0),i.setUint16(6,2048,!0),i.setUint16(8,0,!0),i.setUint16(10,L,!0),i.setUint16(12,P,!0),i.setUint32(14,a,!0),i.setUint32(18,o,!0),i.setUint32(22,o,!0),i.setUint16(26,n.length,!0),i.setUint16(28,0,!0),j.push(i.buffer,n,t.blob);const r=new DataView(new ArrayBuffer(46));r.setUint32(0,33639248,!0),r.setUint16(4,20,!0),r.setUint16(6,20,!0),r.setUint16(8,2048,!0),r.setUint16(10,0,!0),r.setUint16(12,L,!0),r.setUint16(14,P,!0),r.setUint32(16,a,!0),r.setUint32(20,o,!0),r.setUint32(24,o,!0),r.setUint16(28,n.length,!0),r.setUint32(42,B,!0),C.push(r.buffer,n),B+=30+n.length+o}const D=C.reduce((t,e)=>t+(e.byteLength||e.length),0),T=new DataView(new ArrayBuffer(22));T.setUint32(0,101010256,!0),T.setUint16(8,e.length,!0),T.setUint16(10,e.length,!0),T.setUint32(12,D,!0),T.setUint32(16,B,!0);const I=new Blob([...j,...C,T.buffer],{type:"application/zip"}),M=URL.createObjectURL(I),F=`catalinrenghea-export-${E.toISOString().slice(0,10)}.zip`;i(`Gata: ${n.pages.length} pagini, ${n.assets.length} fi%C8%99iere, ${(I.size/1048576).toFixed(1)} MB`,n.failed.length?`${n.failed.length} adrese n-au mers (sunt notate %C3%AEn manifest.json)`:"Toate adresele au mers.");const J=document.createElement("a");J.href=M,J.download=F,J.textContent="%E2%AC%87 Descarc%C4%83 ZIP-ul",J.style.cssText="display:block;margin-top:12px;padding:14px;border-radius:999px;background:#fff;color:#111;text-align:center;font-weight:600;text-decoration:none",s.appendChild(J);try{J.click()}catch{}})().catch(t=>{alert("Scriptul s-a oprit: "+(t&amp;&amp;t.message||t)),window.__crScraper=0});</textarea>
+<div class="row"><button id="copy" type="button">Copiază codul</button><span id="status" role="status"></span></div>
+</section>
+
+<section>
+<h2>2. Salvează-l ca bookmark</h2>
+<details open><summary>iPhone (Safari)</summary>
+<ol>
+<li>Deschide orice pagină, apasă <b>Partajează</b> → <b>Adaugă marcaj</b>. Numește-l <code>Scraper CR</code> și salvează.</li>
+<li>Apasă iconița <b>Marcaje</b> (cartea) → <b>Editează</b> → atinge <code>Scraper CR</code>.</li>
+<li>Șterge adresa din al doilea câmp și lipește codul copiat. Apasă <b>Gata</b>.</li>
+</ol></details>
+<details><summary>Android (Chrome)</summary>
+<ol>
+<li>Deschide orice pagină, apasă <b>⋮</b> → steluța, ca să creezi un marcaj.</li>
+<li><b>⋮</b> → <b>Marcaje</b> → <b>⋮</b> lângă marcajul nou → <b>Editează</b>.</li>
+<li>Numele: <code>Scraper CR</code>. La URL, șterge tot și lipește codul. Salvează.</li>
+</ol></details>
+<details><summary>Calculator (oricare browser)</summary>
+<ol><li>Trage butonul de mai jos în bara de marcaje.</li></ol>
+<div class="row"><a class="drag" id="drag" href="#">Scraper CR</a></div>
+</details>
+</section>
+
+<section>
+<h2>3. Rulează-l pe site</h2>
+<ol>
+<li>Deschide <code>https://catalinrenghea.ro</code> și așteaptă să se încarce.</li>
+<li><b>iPhone:</b> Marcaje → <code>Scraper CR</code>.<br><b>Android:</b> scrie <code>Scraper CR</code> în bara de adrese și atinge sugestia cu steluță (nu căutarea Google).</li>
+<li>Jos apare un panou negru cu progresul. Ține ecranul aprins și nu schimba aplicația cât lucrează (câteva minute).</li>
+<li>La final apasă <b>Descarcă ZIP-ul</b>. Fișierul ajunge în Descărcări (pe iPhone, în aplicația Fișiere).</li>
+</ol>
+<p class="note">Dacă site-ul nu se deschide nici la tine, scriptul nu are de unde să ia date. Atunci rămâne exportul din hosting.</p>
+</section>
+
+<section>
+<h2>4. Trimite-mi ZIP-ul</h2>
+<p>Atașează-l în conversația cu Claude. Dacă e prea mare pentru atașament, urcă-l în Google Drive și spune-mi numele fișierului.</p>
+<p class="note">Arhiva conține <code>api/</code> (JSON din WordPress), <code>html/</code> (fiecare pagină), <code>css/</code>, <code>files/</code> (poze, PDF-uri, fonturi) și <code>manifest.json</code> (de unde vine fiecare fișier și ce n-a mers).</p>
+</section>
+</main>
+<script>
+const ta=document.getElementById('code'),st=document.getElementById('status');
+document.getElementById('drag').setAttribute('href',ta.value);
+document.getElementById('drag').addEventListener('click',e=>{e.preventDefault();st.textContent='Trage butonul în bara de marcaje, nu-l apăsa aici.'});
+document.getElementById('copy').addEventListener('click',()=>{
+  const sel=()=>{ta.focus();ta.select();ta.setSelectionRange(0,ta.value.length)};
+  try{navigator.clipboard.writeText(ta.value).then(()=>{st.textContent='Copiat.'},()=>{sel();st.textContent='Textul e selectat. Apasă Copiază din meniu.'})}
+  catch(e){sel();st.textContent='Textul e selectat. Apasă Copiază din meniu.'}
+});
+</script>
