@@ -221,16 +221,16 @@ Rezolvate de client pe 6 octombrie:
 - Formularea „În calitate de Coordonator la Comisia Europeană…” din FAQ rămâne.
 - Pentru Nokian și Clariant formularea e „am coordonat și implementat”.
 - CV-ul PDF rămâne cum e, cu emailul personal.
+- Experiența în politică: „peste 10 ani” (nu „aproximativ 10”). Corectat pe site și în kitul de presă.
 
 Încă deschise:
 
 1. **Pe site-ul actual sunt acum online** pagini demo cu cifre false (Program: „48600 People have joined”, „$58,466 strânși prin contribuții”; News: 6 articole lorem ipsum) și pagina de autor `securmenow`. Recomand scoaterea lor imediat, independent de preview.
 2. **Termenii și condițiile** conțin încă placeholder-ele șablonului: „[Numele Politicianului]” și „[link către Politica de Confidențialitate]”. Le preia juristul.
-3. **„Aproximativ 10 ani”** (Despre mine) față de **„peste un deceniu”** (titlul de pe Acasă). Cronologia începe în 2014, deci „peste zece ani” e corect. Preview-ul folosește „peste zece ani” în titluri și păstrează „aproximativ 10 ani” în textul citat.
-4. **Sloganul**, subtitlurile temelor și biografia scurtă din kitul de presă sunt propuneri care trebuie aprobate.
-5. **Lista de cartiere** din formular (exemplu: Berceni, Brâncoveanu, Olteniței, Tineretului, Văcărești, Giurgiului, Progresul, Apărătorii Patriei, Timpuri Noi).
-6. **LinkedIn:** URL-ul e construit din handle (`/in/cătălin-renghea/`). De confirmat.
-7. **Logo:** există un SVG original al monogramei? Cel din preview e vectorizat automat.
+3. **Sloganul**, subtitlurile temelor și biografia scurtă din kitul de presă sunt propuneri care trebuie aprobate.
+4. **Lista de cartiere** din formular (exemplu: Berceni, Brâncoveanu, Olteniței, Tineretului, Văcărești, Giurgiului, Progresul, Apărătorii Patriei, Timpuri Noi).
+5. **LinkedIn:** URL-ul e construit din handle (`/in/cătălin-renghea/`). De confirmat.
+6. **Logo:** există un SVG original al monogramei? Cel din preview e vectorizat automat.
 
 ## Ce lipsește (de primit de la client)
 

@@ -33,7 +33,7 @@ Scanat pe 6 octombrie 2026, din exportul complet: 15 pagini HTML, API-ul WordPre
 | Etichete în engleză: „Home” (titlul paginii), „News”, „Blogs”, „Q&A”, „Read more”, „Other News” | mai multe | traduse |
 | Majuscule englezești în română: „Peste un Deceniu de Experiență în Politică”, „Realizări Notabile”, „Întrebări Frecvente” | Acasă | în română doar primul cuvânt are majusculă |
 | Persoana I și a III-a amestecate („Mihai-Cătălin RENGHEA este…”, apoi „am demonstrat abilități remarcabile…”) | Despre mine | o singură voce (persoana I) |
-| „Aproximativ 10 ani” într-un loc, „peste un deceniu” în altul | Acasă / Despre | „peste zece ani” (cronologia începe în 2014) |
+| Despre mine scrie „aproximativ 10 ani” de experiență, deși sunt peste 10 | Despre mine | „peste 10 ani de experiență în politică” (rezolvat în preview) |
 | Formulări de CV corporate („Profesionist executiv tenace”, „am demonstrat abilități remarcabile de leadership”) | Despre mine | ton mai direct, de om, nu de LinkedIn |
 | Prima întrebare din FAQ („Care sunt principalele atribuții în cadrul Guvernului României?”) e o definiție de manual, nu spune nimic despre el | Acasă | scoasă în preview |
 | Contact: „București, România”, fără Sector 4 | Contact | „București, Sector 4” |
