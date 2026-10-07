@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<title>Audit catalinrenghea.ro</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 18mm 16mm; }
+  @page :first { margin: 0; }
+  :root {
+    --ink: #1d1d1f; --ink2: #424245; --ink3: #6e6e73; --line: #d2d2d7;
+    --gray: #f5f5f7; --brand: #2461a2; --night: #0b1f35;
+    --red: #b42318; --red-bg: #fdecea; --amber: #8a5a00; --amber-bg: #fff4d6;
+    --blue-bg: #e8f0f8; --green: #1f7a3a; --green-bg: #e6f4ea;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: "Inter", "DejaVu Sans", sans-serif; color: var(--ink); font-size: 10pt; line-height: 1.5; }
+  h1, h2, h3 { margin: 0; letter-spacing: -0.01em; }
+  p { margin: 0; }
+
+  /* Copertă */
+  .cover { height: 297mm; padding: 26mm 22mm 20mm; background: var(--night); color: #fff; display: flex; flex-direction: column; page-break-after: always; position: relative; }
+  .cover .flag { position: absolute; left: 0; right: 0; bottom: 0; height: 5px; display: grid; grid-template-columns: 1fr 1fr 1fr; }
+  .cover .flag span:nth-child(1) { background: #002b7f; } .cover .flag span:nth-child(2) { background: #fcd116; } .cover .flag span:nth-child(3) { background: #ce1126; }
+  .cover .kicker { font-size: 10.5pt; color: rgb(255 255 255 / .65); }
+  .cover h1 { margin-top: 16mm; font-size: 40pt; line-height: 1.04; font-weight: 700; letter-spacing: -0.03em; }
+  .cover .lead { margin-top: 8mm; font-size: 14pt; line-height: 1.4; color: rgb(255 255 255 / .82); max-width: 135mm; }
+  .stats { margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgb(255 255 255 / .12); border-radius: 14px; overflow: hidden; }
+  .stat { background: #142c47; padding: 7mm 7mm 6mm; }
+  .stat b { display: block; font-size: 28pt; line-height: 1; font-weight: 700; letter-spacing: -0.03em; }
+  .stat b small { font-size: 14pt; font-weight: 600; }
+  .stat span { display: block; margin-top: 2.5mm; font-size: 9.5pt; color: rgb(255 255 255 / .72); }
+  .cover .meta { margin-top: 9mm; font-size: 9pt; color: rgb(255 255 255 / .55); display: flex; justify-content: space-between; }
+
+  /* Conținut */
+  .page-intro { margin-bottom: 7mm; }
+  .page-intro h2 { font-size: 20pt; }
+  .page-intro p { margin-top: 2mm; color: var(--ink2); font-size: 10.5pt; max-width: 160mm; }
+
+  section { margin-top: 9mm; }
+  section.newpage { page-break-before: always; margin-top: 0; }
+  section.keep { break-inside: avoid; }
+  .sec-head { break-after: avoid; display: flex; align-items: center; gap: 3mm; margin-bottom: 3.5mm; }
+  .num { flex: none; width: 8mm; height: 8mm; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 10pt; color: #fff; background: var(--ink); }
+  .sec-head h2 { font-size: 15pt; }
+  .tag { margin-left: auto; font-size: 8pt; font-weight: 600; padding: 1mm 2.5mm; border-radius: 999px; white-space: nowrap; }
+  .t-red { background: var(--red-bg); color: var(--red); }
+  .t-amber { background: var(--amber-bg); color: var(--amber); }
+  .t-blue { background: var(--blue-bg); color: var(--brand); }
+  .t-green { background: var(--green-bg); color: var(--green); }
+  .sec-lead { color: var(--ink2); margin-bottom: 3.5mm; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+  th { text-align: left; font-weight: 600; color: var(--ink3); font-size: 8pt; padding: 0 3mm 1.8mm 0; border-bottom: 1px solid var(--line); }
+  td { vertical-align: top; padding: 2.4mm 3mm 2.4mm 0; border-bottom: 1px solid #e8e8ed; }
+  tr { page-break-inside: avoid; }
+  td:first-child { font-weight: 600; color: var(--ink); }
+  td .where { display: block; margin-top: .8mm; font-weight: 400; font-size: 8pt; color: var(--ink3); font-family: "DejaVu Sans Mono", monospace; }
+  td.fix { color: var(--ink2); }
+  .w-30 { width: 30%; } .w-35 { width: 35%; } .w-40 { width: 40%; }
+  .done { display: inline-block; font-size: 7.5pt; font-weight: 600; color: var(--green); background: var(--green-bg); border-radius: 999px; padding: .3mm 2mm; margin-top: 1mm; }
+
+  .callout { margin-top: 4mm; background: var(--gray); border-radius: 10px; padding: 4mm 5mm; page-break-inside: avoid; }
+  .callout b { display: block; margin-bottom: 1mm; }
+  .callout.red { background: var(--red-bg); }
+  .quote { font-style: italic; color: var(--ink2); }
+
+  ul { margin: 0; padding-left: 4.5mm; } li { margin: 1.2mm 0; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+
+  .plan { display: grid; gap: 3mm; }
+  .step { display: grid; grid-template-columns: 26mm 1fr; gap: 4mm; padding: 4mm 5mm; border-radius: 10px; background: var(--gray); page-break-inside: avoid; }
+  .step .when { font-weight: 700; font-size: 10.5pt; }
+  .step .when small { display: block; font-weight: 400; color: var(--ink3); font-size: 8.5pt; margin-top: .5mm; }
+  .step.s1 { background: var(--red-bg); } .step.s2 { background: var(--amber-bg); } .step.s3 { background: var(--blue-bg); }
+
+  .footer-note { margin-top: 9mm; font-size: 8.5pt; color: var(--ink3); border-top: 1px solid var(--line); padding-top: 3mm; }
+</style>
+</head>
+<body>
+
+<!-- COPERTĂ -->
+<div class="cover">
+  <p class="kicker">Audit site · catalinrenghea.ro</p>
+  <h1>Ce nu merge pe site-ul actual și cum reparăm.</h1>
+  <p class="lead">Am scanat toate cele 15 pagini publice, codul, imaginile și setările WordPress. Mai jos e tot ce am găsit, de la ce trebuie scos azi până la detalii de SEO, cu sugestia de rezolvare la fiecare punct.</p>
+
+  <div class="stats">
+    <div class="stat"><b>0</b><span>mențiuni că e candidat la Primăria Sectorului 4, pe tot site-ul</span></div>
+    <div class="stat"><b>8 pagini</b><span>publice cu conținut demo al temei: lorem ipsum, cifre inventate, engleză</span></div>
+    <div class="stat"><b>~8 <small>MB</small></b><span>are pagina principală; un singur fundal PNG are 3,3&nbsp;MB</span></div>
+    <div class="stat"><b>~95<small>%</small></b><span>din imagini n-au text alternativ (28 din 29 pe Despre mine)</span></div>
+  </div>
+  <div class="meta"><span>Scanat pe 6 octombrie 2026, din exportul complet al site-ului</span><span>Pregătit pentru echipa de campanie</span></div>
+  <div class="flag"><span></span><span></span><span></span></div>
+</div>
+
+<!-- 1 -->
+<section>
+  <div class="page-intro">
+    <h2>Pe scurt</h2>
+    <p>Site-ul arată ca un șablon WordPress pornit și lăsat la jumătate. Paginile despre Cătălin sunt bune ca informație, dar textul are greșeli și repetiții, iar în jurul lor au rămas pagini demo ale temei, în engleză, cu cifre inventate. Mesajul de campanie lipsește complet. Partea bună: aproape totul se rezolvă repede, iar site-ul nou (preview-ul) le rezolvă deja pe toate.</p>
+  </div>
+
+  <div class="sec-head"><span class="num">1</span><h2>De scos acum</h2><span class="tag t-red">Urgent · azi</span></div>
+  <p class="sec-lead">Lucruri care se văd prost public sau pot crea probleme. Toate se rezolvă din wp-admin, în câteva minute.</p>
+  <table>
+    <tr><th class="w-35">Ce e</th><th>De ce contează</th><th class="w-30">Ce facem</th></tr>
+    <tr>
+      <td>Pagina Program e demo-ul temei<span class="where">/program/</span></td>
+      <td>E în engleză: <span class="quote">„It's Morning Again in America!”</span>. Are cifre inventate (<span class="quote">„48600 People have joined the campaign”</span>, <span class="quote">„76420 issues solved”</span>, <span class="quote">„1000000+ followers”</span>) și un widget <span class="quote">„$58,466 strânși prin contribuții”</span> cu butoane de donație de $5–$100. Pe site-ul unui candidat, sumele în dolari și donațiile online sunt și o problemă juridică (finanțarea campaniilor e reglementată de AEP).</td>
+      <td class="fix">Pagina trece în draft azi. Programul real vine pe site-ul nou.</td>
+    </tr>
+    <tr>
+      <td>6 articole lorem ipsum + pagina News<span class="where">/news/, /2023/07–08/…</span></td>
+      <td>Titluri ca <span class="quote">„Curabitur dolor aliquet sodales finibus”</span>, cu poze stock ale temei. Apar în sitemap, deci Google le indexează.</td>
+      <td class="fix">Ștergere sau draft. Se scot din meniu și din sitemap.</td>
+    </tr>
+    <tr>
+      <td>Pagina de autor „securmenow”<span class="where">/author/securmenow/</span></td>
+      <td>Expune public numele de utilizator al contului de admin, plus un sitemap separat cu el. Asta e jumătate din ce-i trebuie cuiva care încearcă să spargă site-ul.</td>
+      <td class="fix">Dezactivăm arhivele de autor. Redenumim sau înlocuim contul admin.</td>
+    </tr>
+    <tr>
+      <td>Bannerul agenției vechi în footer</td>
+      <td>Reclamă la „securmenow”, pe toate paginile site-ului candidatului.</td>
+      <td class="fix">Îl scoatem.</td>
+    </tr>
+    <tr>
+      <td>Logo-urile ANPC SAL și SOL/ODR</td>
+      <td>Sunt obligatorii pentru magazine online, nu pentru un politician. Arată a șablon copiat.</td>
+      <td class="fix">Le scoatem.</td>
+    </tr>
+  </table>
+</section>
+
+<!-- 2 -->
+<section class="keep">
+  <div class="sec-head"><span class="num">2</span><h2>Lipsește mesajul de campanie</h2><span class="tag t-red">Important</span></div>
+  <div class="two">
+    <div>
+      <ul>
+        <li>Nicăieri nu scrie că e <b>candidat la Primăria Sectorului 4</b>. Cuvintele „candidat”, „primar” și „Primăria” nu apar deloc. Sectorul 4 apare doar în titlul jobului de la DGASPC.</li>
+        <li>Titlul principal e <span class="quote">„Peste un Deceniu de Experiență în Politică!”</span>: un rând de CV, nu o promisiune pentru oamenii din sector.</li>
+        <li>Nu există niciun mod de implicare: voluntariat, newsletter, sesizări, canal de WhatsApp.</li>
+        <li>Meniul are doar Acasă, Despre mine și Contact. Program și News există, dar nu sunt în meniu.</li>
+      </ul>
+    </div>
+    <div class="callout">
+      <b>Cum rezolvă site-ul nou</b>
+      Slogan de campanie în prima secțiune, „Spune-mi problema ta” (sesizări cu hartă, în 5 pași), „Implică-te” (voluntar, susținător, ambasador de cartier), Program pe 6 teme, newsletter.
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section>
+  <div class="sec-head"><span class="num">3</span><h2>Texte și greșeli</h2><span class="tag t-amber">De corectat</span></div>
+  <table>
+    <tr><th class="w-40">Problemă</th><th class="w-30">Unde</th><th>Fix</th></tr>
+    <tr><td>„Consiler” în loc de „Consilier”</td><td class="fix">Acasă (Munca mea), Despre mine</td><td class="fix">Corectat <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>„Ministrul Economiei” în loc de „Ministerul Economiei”</td><td class="fix">Acasă</td><td class="fix">Corectat <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>Titlul de la DGASPC tăiat: „Generală de Asistență Socială…”</td><td class="fix">Despre mine</td><td class="fix">Titlul complet: Șef Serviciu Logistic, DGASPC Sector 4 <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>6 joburi apar de două ori, identic</td><td class="fix">Despre mine</td><td class="fix">Deduplicat: 12 roluri, fiecare o dată <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>„Catalin” fără diacritice</td><td class="fix">Titlul paginilor, logo-ul text, footer</td><td class="fix">„Cătălin” peste tot</td></tr>
+    <tr><td>Etichete în engleză: „Home”, „News”, „Blogs”, „Q&amp;A”, „Read more”, „Other News”</td><td class="fix">Titluri și butoane</td><td class="fix">Traduse în română</td></tr>
+    <tr><td>Majuscule ca în engleză: „Peste un Deceniu de Experiență în Politică”, „Realizări Notabile”</td><td class="fix">Acasă</td><td class="fix">În română, doar primul cuvânt cu majusculă</td></tr>
+    <tr><td>Persoana I și a III-a amestecate („Mihai-Cătălin RENGHEA este…”, apoi „am demonstrat…”)</td><td class="fix">Despre mine</td><td class="fix">O singură voce: persoana I</td></tr>
+    <tr><td>„Aproximativ 10 ani” într-un loc, „peste un deceniu” în altul</td><td class="fix">Acasă, Despre mine</td><td class="fix">„Peste zece ani” (cronologia începe în 2014)</td></tr>
+    <tr><td>Ton de CV corporate: „Profesionist executiv tenace”, „abilități remarcabile de leadership”</td><td class="fix">Despre mine</td><td class="fix">Ton direct, de om din cartier, nu de LinkedIn</td></tr>
+    <tr><td>Prima întrebare din FAQ e o definiție de manual a Guvernului, nu spune nimic despre el</td><td class="fix">Acasă</td><td class="fix">Scoasă <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>Locația e „București, România”, fără Sector 4</td><td class="fix">Contact</td><td class="fix">„București, Sector 4”</td></tr>
+  </table>
+</section>
+
+<!-- 4 -->
+<section>
+  <div class="sec-head"><span class="num">4</span><h2>GDPR și legal</h2><span class="tag t-amber">De văzut cu juristul</span></div>
+  <table>
+    <tr><th class="w-35">Problemă</th><th>Detaliu</th><th class="w-30">Sugestie</th></tr>
+    <tr><td>Niciun banner de cookies</td><td>Politica de cookies spune că există un banner și că site-ul folosește cookies de publicitate și de direcționare. Ori nu e adevărat, ori lipsește consimțământul.</td><td class="fix">Scoatem cookies-urile inutile, apoi corectăm politica. Pe site-ul nou nu există niciunul.</td></tr>
+    <tr><td>Google reCAPTCHA pe toate paginile</td><td>Trimite IP-ul și date despre vizitator la Google, fără acord, pe fiecare pagină, nu doar pe formular. Nu e pomenit în politica de confidențialitate.</td><td class="fix">Înlocuit cu honeypot sau cu Cloudflare Turnstile, doar pe formular.</td></tr>
+    <tr><td>Google Fonts încărcat de la Google</td><td>Același transfer de IP către Google, la fiecare vizită.</td><td class="fix">Fonturi servite de pe site.</td></tr>
+    <tr><td>Formularul de contact n-are bifă de acord</td><td>Cere nume, prenume, email, telefon, fără consimțământ și fără link spre politica de confidențialitate. Câmpurile n-au etichete, doar placeholdere.</td><td class="fix">Bifă nebifată implicit, cu textul scopului și link spre politică.</td></tr>
+    <tr><td>Politica de confidențialitate incompletă</td><td>Nu spune cine e operatorul (nume, adresă), cât timp se păstrează datele și unde te poți plânge (ANSPDCP). La contact scrie doar „adresa specificată pe site”.</td><td class="fix">Rescrisă de jurist, cu operatorul numit.</td></tr>
+    <tr><td>Termeni cu placeholdere din șablon</td><td><span class="quote">„[Numele Politicianului]”</span> și <span class="quote">„[link către Politica de Confidențialitate]”</span> sunt publicate așa.</td><td class="fix">Completate de jurist.</td></tr>
+    <tr><td>Linkul „GDPR” din footer</td><td>Duce la gdpr.eu, un site generic, nu la politica proprie.</td><td class="fix">Scos sau redirecționat spre politica proprie.</td></tr>
+  </table>
+</section>
+
+<!-- 5 -->
+<section class="newpage">
+  <div class="sec-head"><span class="num">5</span><h2>Tehnic, SEO și accesibilitate</h2><span class="tag t-blue">La lansare</span></div>
+  <table>
+    <tr><th class="w-35">Problemă</th><th>De ce contează</th><th class="w-30">Fix</th></tr>
+    <tr><td>Limba paginii e engleză (lang="en-US")</td><td>Google și cititoarele de ecran tratează site-ul ca fiind în engleză.</td><td class="fix">lang="ro" <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>Zoom blocat pe mobil</td><td>Cine are nevoie să mărească textul (mulți alegători în vârstă) nu poate.</td><td class="fix">Zoom permis <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>Aceeași descriere Google pe toate paginile</td><td>Toate rezultatele din căutare arată identic.</td><td class="fix">Descriere proprie pe fiecare pagină <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>Nicio imagine de partajare pe paginile reale</td><td>Un link trimis pe Facebook sau WhatsApp apare fără poză. Doar articolele demo au imagine, iar aceea e stock.</td><td class="fix">Imagine cu portretul și sloganul <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>Titlul principal (H1) greșit sau lipsă</td><td>Pe Acasă, H1 e „Munca mea!”. Despre mine și News n-au deloc.</td><td class="fix">Un H1 clar pe fiecare pagină <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>~95% din imagini fără text alternativ</td><td>Accesibilitate zero pentru nevăzători, SEO pierdut pe imagini.</td><td class="fix">Text alternativ în română pentru toate <span class="done">rezolvat în preview</span></td></tr>
+    <tr><td>Pagina principală are ~8 MB</td><td>Un fundal PNG de 3,3 MB (o pată albastră estompată) și PNG-uri de 0,5–0,9 MB. Pe 4G se încarcă greu.</td><td class="fix">Imagini optimizate. În preview, portretul din hero are 37 KB.</td></tr>
+    <tr><td>11–14 fișiere CSS și 18–21 scripturi pe pagină</td><td>Tema BeTheme, jQuery, player audio, reCAPTCHA: se încarcă pe fiecare pagină, chiar dacă nu sunt folosite.</td><td class="fix">Preview: Lighthouse mobil 94–97 la performanță.</td></tr>
+    <tr><td>Titlul și logo-ul apar de două ori în cod</td><td>Variantele de mobil și desktop sunt ambele în pagină, deci cititoarele de ecran le citesc dublu.</td><td class="fix">O singură variantă, responsive.</td></tr>
+    <tr><td>Imagine de fundal care nu mai există</td><td>munca-mea-background.png dă 404.</td><td class="fix">Scoasă din CSS.</td></tr>
+    <tr><td>Versiunea WordPress e publică</td><td>„WordPress 7.1.2” apare în cod, informație utilă pentru atacatori.</td><td class="fix">Ascunsă; actualizări automate.</td></tr>
+    <tr><td>Linkuri sociale cu parametri de tracking</td><td>?_t=…&amp;_r=1 la TikTok, ?originalSubdomain=ro la LinkedIn. Nu e grav, doar urât.</td><td class="fix">Linkuri curate.</td></tr>
+  </table>
+</section>
+
+<!-- 6 -->
+<section class="keep">
+  <div class="sec-head"><span class="num">6</span><h2>Imagini și identitate vizuală</h2><span class="tag t-blue">De cerut de la client</span></div>
+  <ul>
+    <li><b>Logo-ul există în vreo 15 variante</b> (PNG, JPG, „removebg-preview”, „ezgif-resize”), dar niciuna în SVG. Se folosesc amestecat emblema rotundă cu silueta și monograma C/R. <b>Sugestie:</b> rămâne doar monograma C/R, cerută în SVG de la designer. În preview am vectorizat-o provizoriu.</li>
+    <li><b>Ședința foto profesională</b> (fundal albastru) e folosită doar în bucăți mici. Cele mai vii poze, de pe stradă, de la birou și de la conferințe, sunt <b>exporturi WhatsApp</b>. Merg, dar originalele de la fotograf ar fi mult mai bune.</li>
+    <li><b>36 de imagini din bibliotecă sunt demo-uri ale temei.</b> Ocupă loc, iar unele apar public, pe News și în articolele demo. Se pot șterge după ce scoatem paginile demo.</li>
+  </ul>
+</section>
+
+<!-- Plan -->
+<section>
+  <div class="sec-head"><span class="num">→</span><h2>Ce facem, în ordine</h2></div>
+  <div class="plan">
+    <div class="step s1"><div class="when">Azi<small>~15 minute în wp-admin</small></div><div>Program, News și cele 6 articole demo trec în draft. Scoatem bannerul securmenow și logo-urile ANPC din footer. Dezactivăm pagina de autor.</div></div>
+    <div class="step s2"><div class="when">Săptămâna asta<small>dacă site-ul vechi mai rămâne online</small></div><div>Banner de cookies sau reCAPTCHA scos. Bifă de acord în formularul de contact. Corecturile de text de la secțiunea 3, în special diacriticele și greșelile din titluri.</div></div>
+    <div class="step s3"><div class="when">La lansare<small>site-ul nou</small></div><div>Restul e deja rezolvat în preview: mesaj de campanie, sesizări, implicare, program, SEO, performanță, accesibilitate, imagini optimizate. Rămân de primit de la client: textele Programului, videoul, logo-ul în SVG și revizuirea juridică a paginilor legale.</div></div>
+  </div>
+
+  <p class="footer-note">Sursa: exportul complet al catalinrenghea.ro (HTML-ul paginilor, API-ul WordPress, CSS, 92 de fișiere media), descărcat pe 6 octombrie 2026. Cifrele de greutate sunt calculate din fișierele descărcate. „Rezolvat în preview” se referă la site-ul nou, aflat în lucru.</p>
+</section>
+
+</body>
+</html>
