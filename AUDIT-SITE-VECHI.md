@@ -6,15 +6,15 @@ Scanat pe 6 octombrie 2026, din exportul complet: 15 pagini HTML, API-ul WordPre
 
 | Ce e | Unde | De ce contează | Ce facem |
 |---|---|---|---|
-| Pagina **Program** e demo-ul temei, în engleză: „It's Morning Again in America!”, „48600 People have joined the campaign”, „76420 issues solved”, „1000000+ followers”, „$58,466 strânși prin contribuții” cu butoane de donație de $5/$25/$50/$100 | `/program/` | Cifrele sunt inventate și apar pe site-ul unui candidat. Butoanele de donație în dolari, pe un site de campanie din România, sunt o problemă și juridic (finanțarea campaniilor e reglementată de AEP). | Pagina trece în ciornă (draft) azi. |
+| Pagina **Program** e demo-ul temei, în engleză: „It's Morning Again in America!”, „48600 People have joined the campaign”, „76420 issues solved”, „1000000+ followers”, „$58,466 strânși prin contribuții” cu butoane de donație de $5/$25/$50/$100 | `/program/` | Cifrele sunt inventate și apar pe site-ul unui candidat. Un widget de donații în dolari poate crea și probleme juridice: finanțarea campaniilor e reglementată strict (Legea 334/2006, controlată de AEP). | Pagina trece în ciornă (draft) azi. |
 | **6 articole lorem ipsum** din 2023 („Curabitur dolor aliquet…”) cu poze stock ale temei, plus pagina `/news/` cu titlul „Blogs” | `/news/`, `/2023/...` | Arată ca un site neterminat. Google le indexează (sunt în sitemap). | Le ștergem, sau le punem în draft. |
-| Pagina de autor **`/author/securmenow/`** și sitemap-ul de utilizatori | `/author/securmenow/`, `wp-sitemap-users-1.xml` | Expune public numele de utilizator al contului de admin: e jumătate din ce-i trebuie cuiva care vrea să spargă site-ul. | Dezactivăm arhivele de autor și sitemap-ul de users (Yoast/RankMath sau un snippet). Contul admin redenumit sau înlocuit. |
+| Pagina de autor **`/author/securmenow/`** și sitemap-ul de utilizatori | `/author/securmenow/`, `wp-sitemap-users-1.xml` | Expune public numele de utilizator al contului care a publicat (de obicei e chiar cel de admin): e jumătate din ce-i trebuie cuiva care vrea să spargă site-ul. | Dezactivăm arhivele de autor și sitemap-ul de users (Yoast/RankMath sau un snippet). Contul admin redenumit sau înlocuit. |
 | **Bannerul agenției vechi (securmenow)** în footer, pe toate paginile | footer | E reclamă la altcineva pe site-ul candidatului. | Îl scoatem. |
-| **Logo-urile ANPC SAL și SOL/ODR** în footer | footer | Sunt obligatorii pentru magazine online, nu pentru un politician. Arată a șablon copiat. | Le scoatem. |
+| **Logo-urile ANPC SAL și SOL/ODR** în footer | footer | Sunt obligatorii pentru comercianții care vând online, nu pentru un politician. Arată a șablon copiat. | Le scoatem. |
 
 ## 2. Lipsește complet mesajul de campanie
 
-- Pe Acasă, Despre mine și Contact **nu apare nicăieri că e candidat** la Primăria Sectorului 4. Cuvintele „candidat”, „Primăria”, „primar” nu există pe site. Sectorul 4 apare doar în titlul jobului de la DGASPC.
+- Pe Acasă, Despre mine și Contact **nu apare nicăieri că e candidat** la Primăria Sectorului 4. Cuvintele „candidat”, „Primăria”, „primar” nu există pe site. Sectorul 4 apare doar în legătură cu joburile de la DGASPC.
 - Mesajul principal e „Peste un Deceniu de Experiență în Politică!”, adică un CV, nu o promisiune pentru oameni.
 - Nu există niciun mod de implicare: voluntar, newsletter, sesizări, WhatsApp.
 - Meniul are doar Acasă / Despre mine / Contact. Program și News există, dar nu sunt în meniu.
@@ -30,8 +30,8 @@ Scanat pe 6 octombrie 2026, din exportul complet: 15 pagini HTML, API-ul WordPre
 | Titlul de la DGASPC tăiat: „Generală de Asistență Socială…” | Despre mine | corectat în preview |
 | **Blocuri duplicate**: 6 joburi apar de două ori, identic (DGASPC, Senat, BEST SMART, Guvern, Șef Cabinet, Min. Economiei) | Despre mine | deduplicat în preview |
 | „**Catalin**” fără diacritice în titlul paginilor, logo text și footer | toate paginile | „Cătălin” peste tot |
-| Etichete în engleză: „Home” (titlul paginii), „News”, „Blogs”, „Q&A”, „Read more”, „Other News” | mai multe | traduse |
-| Majuscule englezești în română: „Peste un Deceniu de Experiență în Politică”, „Realizări Notabile”, „Întrebări Frecvente” | Acasă | în română doar primul cuvânt are majusculă |
+| Etichete în engleză: „News”, „Blogs”, „Q&A”, „Other News”, „Read more” | titluri, meniuri, butoane | traduse |
+| Majuscule englezești în română: „Peste un Deceniu de Experiență în Politică”, „Realizări Notabile”, „Întrebări Frecvente”, „Despre Mine” | Acasă, titlul paginii Despre mine | în română doar primul cuvânt are majusculă |
 | Persoana I și a III-a amestecate („Mihai-Cătălin RENGHEA este…”, apoi „am demonstrat abilități remarcabile…”) | Despre mine | o singură voce (persoana I) |
 | Despre mine scrie „aproximativ 10 ani” de experiență, deși sunt peste 10 | Despre mine | „peste 10 ani de experiență în politică” (rezolvat în preview) |
 | Formulări de CV corporate („Profesionist executiv tenace”, „am demonstrat abilități remarcabile de leadership”) | Despre mine | ton mai direct, de om, nu de LinkedIn |
@@ -62,18 +62,18 @@ Scanat pe 6 octombrie 2026, din exportul complet: 15 pagini HTML, API-ul WordPre
 | **Aceeași meta descriere pe toate paginile** („Cătălin Renghea - Peste un Deceniu…”) | Google arată același text la fiecare rezultat | descriere proprie pe fiecare pagină |
 | **Nicio imagine de partajare** (og:image) pe paginile reale. Doar articolele demo au, cu poze stock. | Pe Facebook/WhatsApp linkul apare fără poză | imagine OG cu portretul (făcută în preview) |
 | H1 greșit sau lipsă: pe Acasă H1-ul e „Munca mea!”; Despre mine și News nu au H1 | SEO și accesibilitate | un H1 clar pe fiecare pagină |
-| **~95% din imagini n-au text alternativ** (ex.: 28 din 29 pe Despre mine) | accesibilitate, SEO pe imagini | alt scris pentru toate |
-| **Acasă are ~8 MB**: un fundal PNG de **3,3 MB** (`muncabg.png`, o pată albastră estompată) și PNG-uri de 0,5–0,9 MB | se încarcă greu pe 4G | imagini WebP/AVIF redimensionate (preview: hero de 37 KB) |
-| 11–14 fișiere CSS și 18–21 scripturi pe fiecare pagină (BeTheme + jQuery + jPlayer + reCAPTCHA) | lent pe mobil | — (preview: un singur CSS, JS minim) |
-| Titlul și logo-ul text sunt randate de două ori (versiune mobil + desktop în HTML) | cititoarele de ecran citesc dublu | — |
+| **9 din 10 imagini n-au text alternativ** (ex.: 28 din 29 pe Despre mine) | accesibilitate, SEO pe imagini | alt scris pentru toate |
+| **Un fundal de 3,3 MB pe Acasă** (`muncabg.png`, o pată albastră estompată, la secțiunea „Munca mea”) | pe 4G, doar el durează câteva secunde | imagini WebP/AVIF redimensionate (preview: hero de 37 KB) |
+| 11–14 fișiere CSS și 18–21 scripturi pe fiecare pagină (BeTheme, jQuery, jPlayer, reCAPTCHA) | lent pe mobil | — (preview: un singur CSS, JS minim) |
+| Titlul principal apare de două ori în cod (o variantă pentru mobil, una pentru desktop) | Google vede două titluri identice; dacă ascunderea nu e făcută corect, cititoarele de ecran îl citesc de două ori | o singură variantă, responsive |
 | Un fundal care nu mai există: `munca-mea-background.png` (404) | eroare în consolă | — |
 | WordPress expune versiunea (`WordPress 7.1.2` în meta generator) | informație utilă pentru atacatori | ascunsă, plus update-uri la zi |
 | Linkuri sociale cu parametri de tracking (`?_t=…&_r=1` la TikTok, `?originalSubdomain=ro` la LinkedIn, `?locale=ro_RO` la Facebook) | URL-uri urâte, nu e grav | linkuri curate |
 
 ## 6. Imagini
 
-- **Logo-ul există în ~15 variante** (PNG-uri, JPG-uri, „removebg-preview”, „ezgif-resize”), dar niciuna în SVG. Emblema rotundă cu silueta și monograma C/R sunt folosite amestecat. **Sugestie:** un singur logo (monograma), cerut în SVG de la designer.
-- Ședința foto profesională (ALX44xx, fundal albastru) e folosită doar în bucăți mici. Pozele cele mai noi și mai vii (stradă, birou, conferință) sunt **exporturi WhatsApp**: merg, dar originalele de la fotograf ar fi mult mai bune.
+- **Logo-ul există în aproape 20 de fișiere** (PNG-uri, JPG-uri, „removebg-preview”, „ezgif-resize”), dar niciuna în SVG. Emblema rotundă cu silueta și monograma C/R sunt folosite amestecat. **Sugestie:** un singur logo (monograma), cerut în SVG de la designer.
+- Ședința foto profesională (ALX44xx, fundal albastru) e folosită rar, de multe ori decupată, cu fundalul scos. Pozele cele mai noi și mai vii (stradă, birou, conferință) sunt **exporturi WhatsApp**: merg, dar originalele de la fotograf ar fi mult mai bune.
 - 36 de imagini din Media Library sunt demo-uri ale temei (`politics3-*`). Ocupă loc și unele apar public (pe News și în articolele demo).
 
 ## Prioritizare rapidă
